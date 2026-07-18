@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA | Experiencia de Cliente | Montecristo AInsights</title>
+    
+    <!-- SEO Metatags Estándar -->
+    <meta name="description" content="AURA es la evolución estratégica de tus módulos de atención al cliente. Integramos IA conversacional avanzada y optimización operativa para resolver incidencias en el primer contacto.">
+    <meta name="keywords" content="AURA, Montecristo AInsights, Experiencia de Cliente, IA Conversacional, Atención al Cliente, Soluciones B2B, Optimización Operativa, Automatización de Procesos">
+    <meta name="author" content="Montecristo AInsights">
+    <link rel="canonical" href="https://montecristoainsights.com/AURA.html">
+    <meta name="theme-color" content="#06142E">
+
+    <!-- Protocolo Open Graph (WhatsApp, Telegram, Slack, Facebook) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AURA | Experiencia de Cliente de Alto Impacto | Montecristo AInsights">
+    <meta property="og:description" content="Estructuramos e integramos IA conversacional para que tu personal de primera línea deje de delegar problemas y gestione soluciones eficientes en el primer contacto.">
+    <meta property="og:url" content="https://montecristoainsights.com/AURA.html">
+    <meta property="og:site_name" content="Montecristo AInsights">
+    
+    <!-- Coexistencia y Optimización de Portadas Premium para Chats -->
+    <meta property="og:image" content="https://montecristoainsights.com/assets/og-image-aura.png">
+    <meta property="og:image:secure_url" content="https://montecristoainsights.com/assets/og-image-aura.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image" content="https://lh3.googleusercontent.com/d/1u4U_5Gujf8pGQh2APKEarAnWV79qVocB"> <!-- Respaldo del logotipo de AURA -->
+
+    <!-- Twitter Cards (X) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AURA | Experiencia de Cliente de Alto Impacto | Montecristo AInsights">
+    <meta name="twitter:description" content="De 'Tomadores de Recados' a Solucionadores. El escalamiento definitivo de tu equipo frontal impulsado por IA conversacional.">
+    <meta name="twitter:image" content="https://montecristoainsights.com/assets/og-image-aura.png">
+
+    <!-- Favicon & Touch Icon de Respaldo -->
+    <link rel="icon" type="image/x-icon" href="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w">
+    <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@200;300;400;500;600;700;800&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        aura: {
+                            bg: '#06142E',       /* Azul Fondo Logotipo AURA Oficial */
+                            base: '#1a56db',     /* Azul Tecnológico AURA */
+                            light: '#3b82f6',
+                            dark: '#0A1930',     /* Azul Consola Oscura */
+                            success: '#10b981',
+                            warning: '#f59e0b',
+                            danger: '#ef4444',
+                            slate: '#94a3b8'
+                        },
+                        corporate: {
+                            dark: '#16262e',
+                            darker: '#121f26',
+                            gold: '#e59903'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['DM Serif Display', 'serif'],
+                        mono: ['Fira Code', 'monospace']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #06142E;
+            color: #f8fafc;
+            overflow-x: hidden;
+        }
+
+        /* Botón estilo Premium AURA (Elegancia heredada de EVOS/MIND) */
+        .btn-aura {
+            position: relative;
+            background: transparent;
+            border: 1px solid #3b82f6;
+            color: #60a5fa;
+            padding: 0.8rem 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
+            transition: all 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 1;
+        }
+        .btn-aura::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(59, 130, 246, 0.2), transparent);
+            transition: all 0.6s ease;
+            z-index: -1;
+        }
+        .btn-aura:hover::before {
+            left: 100%;
+        }
+        .btn-aura:hover {
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+            border-color: #60a5fa;
+            color: #ffffff;
+            transform: translateY(-2px);
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        /* Reverberación (Blur) SÓLO para la parte superior del logotipo de AURA */
+        @keyframes auraOrbGlow {
+            0%, 100% { 
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 0.3;
+                filter: blur(25px);
+            }
+            50% { 
+                transform: translate(-50%, -50%) scale(1.4);
+                opacity: 0.6;
+                filter: blur(35px);
+            }
+        }
+        .aura-glow-orb {
+            position: absolute;
+            top: 20%; /* Alineado con el óvalo superior del logo */
+            left: 50%;
+            width: 120px;
+            height: 120px;
+            background-color: #3b82f6;
+            border-radius: 50%;
+            z-index: 0;
+            pointer-events: none;
+            animation: auraOrbGlow 8s ease-in-out infinite; /* Súper lento y orgánico */
+        }
+
+        /* Custom Scrollbar para áreas internas (como el chat IA) */
+        .scrollbar-aura::-webkit-scrollbar { width: 4px; height: 4px; }
+        .scrollbar-aura::-webkit-scrollbar-track { background: #0A1930; }
+        .scrollbar-aura::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 4px; }
+
+        /* Ocultar barra de desplazamiento para elementos limpios (Pestañas) */
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        .scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+        /* Efectos de grid de fondo sutil */
+        .bg-grid-aura {
+            background-size: 40px 40px;
+            background-image: linear-gradient(to right, rgba(59, 130, 246, 0.03) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(59, 130, 246, 0.03) 1px, transparent 1px);
+        }
+
+        /* Animaciones Fade-In */
+        .fade-in-up {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        .fade-in-up.is-active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        /* Consola Shadow & Active States */
+        .console-shadow {
+            box-shadow: 0 30px 60px -15px rgba(0, 0, 0, 0.8), 0 0 40px rgba(26, 86, 219, 0.1);
+        }
+        
+        /* Interacción Mobile para "Hover" - Transforma hovers en estados activos al hacer scroll */
+        @media (hover: none) {
+            .group.is-active .group-hover\:opacity-100 { opacity: 1; }
+            .group.is-active .group-hover\:scale-150 { transform: scale(1.5); }
+            .group.is-active .group-hover\:scale-110 { transform: scale(1.1); }
+            .group.is-active .group-hover\:translate-y-1 { transform: translateY(0.25rem); }
+            /* Activación de bordes luminosos en Roadmap para móvil */
+            .group.is-active.hover\:border-aura-success\/50 { border-color: rgba(16, 185, 129, 0.5); }
+            .group.is-active.hover\:border-aura-light\/50 { border-color: rgba(59, 130, 246, 0.5); }
+            .group.is-active.hover\:border-corporate-gold\/50 { border-color: rgba(229, 153, 3, 0.5); }
+            .group.is-active.hover\:border-purple-500\/50 { border-color: rgba(168, 85, 247, 0.5); }
+            .group.is-active.hover\:bg-\[\#0A1930\] { background-color: #0A1930; }
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <header class="fixed w-full top-0 z-50 transition-all duration-500 py-6 bg-[#06142E]/90 backdrop-blur-md border-b border-white/5" id="navbar">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 flex justify-between items-center">
+            <a href="web 2.html" class="flex items-center group opacity-50 hover:opacity-100 transition-all duration-500" title="Regresar a Montecristo AInsights">
+                <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo Logo" class="h-6 sm:h-8 w-auto object-contain brightness-200">
+                <div class="ml-3 sm:ml-4 border-l border-white/20 pl-3 sm:pl-4 py-1">
+                    <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.4em] text-white block">Regresar</span>
+                    <span class="text-[7px] sm:text-[8px] uppercase tracking-[0.2em] text-corporate-gold block">Montecristo AInsights</span>
+                </div>
+            </a>
+            
+            <div class="flex items-center gap-3 sm:gap-6">
+                <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-aura-light font-medium hidden sm:inline-block">Experiencia Activa</span>
+                <div class="w-2 h-2 rounded-full bg-aura-light animate-pulse shadow-[0_0_8px_rgba(59,130,246,0.8)]"></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="relative min-h-screen flex flex-col items-center justify-center pt-24 overflow-hidden focus-section pb-12">
+        <div class="absolute inset-0 bg-grid-aura pointer-events-none z-0 opacity-40"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-aura-dark/60 via-[#06142E] to-[#06142E] z-0 pointer-events-none"></div>
+
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 text-center relative z-10 py-12 flex flex-col items-center">
+            
+            <!-- Logotipo Oficial AURA con Efecto Blur Trasero -->
+            <div class="relative w-full flex justify-center items-center mb-10 fade-in-up">
+                <!-- Orbe difuminado sólo para la parte superior -->
+                <div class="aura-glow-orb"></div>
+                <!-- Imagen real del logotipo -->
+                <img src="https://lh3.googleusercontent.com/d/1u4U_5Gujf8pGQh2APKEarAnWV79qVocB" alt="Logotipo Oficial AURA" class="relative z-10 w-full max-w-[250px] sm:max-w-[350px] md:max-w-[450px] h-auto object-contain">
+            </div>
+            
+            <!-- Párrafo Central con Palabras Clave -->
+            <div class="max-w-4xl mx-auto border-t border-b border-white/10 py-8 px-4 sm:px-6 md:px-12 mb-10 bg-[#0A1930]/40 backdrop-blur-sm shadow-[0_0_40px_rgba(26,86,219,0.05)] rounded-sm fade-in-up" style="transition-delay: 100ms;">
+                <p class="text-slate-300 font-light text-base sm:text-lg md:text-2xl leading-relaxed text-justify md:text-center">
+                    AURA es el <span class="text-aura-light font-semibold">escalamiento de barras de recepción</span> o módulos de información convencionales, transformándolos en verdaderos <span class="text-aura-light font-semibold">departamentos de atención al cliente y gestión de la experiencia de usuario.</span>
+                </p>
+            </div>
+
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:gap-6 w-full px-4 fade-in-up" style="transition-delay: 200ms;">
+                <a href="#freemium-console" class="btn-aura w-full sm:w-auto">
+                    Ver Consola Auxiliar (Freemium)
+                </a>
+                <a href="#roadmap" class="text-slate-400 hover:text-white text-[10px] sm:text-xs tracking-[0.2em] uppercase transition-colors text-center w-full sm:w-auto mt-2 sm:mt-0 flex items-center justify-center gap-2 group">
+                    Descubrir Metodología de Adopción <i class="fas fa-arrow-down text-aura-light group-hover:translate-y-1 transition-transform duration-300"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 sm:py-24 bg-[#0A1930] relative z-10 border-t border-white/5 focus-section">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-5xl text-center fade-in-up">
+            <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-aura-light font-bold block mb-4">El Punto Ciego Operativo</span>
+            <h2 class="text-2xl sm:text-4xl font-serif text-white mb-8">De "Tomadores de Recados" a Solucionadores.</h2>
+            
+            <p class="text-slate-200 text-sm sm:text-base leading-relaxed font-normal mb-8 max-w-4xl mx-auto text-justify sm:text-center">
+                La mayoría de las empresas subestiman su línea de fuego frontal. Mantienen sus módulos de información como una simple secretaría: personal que pide paciencia, anota quejas en un papel y transfiere la carga de trabajo a otros departamentos. 
+            </p>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light max-w-4xl mx-auto text-justify sm:text-center border-l-2 border-aura-light/50 pl-4 sm:pl-0 sm:border-l-0 sm:border-t sm:pt-6">
+                <strong>AURA no es un conmutador moderno.</strong> Es el escalamiento definitivo. Estructuramos e integramos la Inteligencia Artificial para que su personal frontal deje de delegar problemas y tenga la capacidad, el contexto y la herramienta para <span class="text-aura-light font-medium">gestionar y resolver en el primer contacto.</span>
+            </p>
+        </div>
+    </section>
+
+    <section id="freemium-console" class="py-20 sm:py-32 bg-[#06142E] border-t border-white/5 relative z-10">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-[1400px]">
+            
+            <div class="text-center mb-12 sm:mb-16 fade-in-up">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-aura-light/30 bg-aura-light/10 text-aura-light text-[10px] font-mono uppercase tracking-widest mb-6">
+                    <i class="fas fa-robot"></i> El Auxiliar Copiloto (Hito 1)
+                </div>
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-light tracking-[0.1em] text-white uppercase mb-4">Consola de Resolución en Tiempo Real</h2>
+                <p class="text-slate-400 text-xs sm:text-sm max-w-3xl mx-auto font-light px-2">
+                    Interactúe con el primer nivel de AURA. Observe cómo la IA asiste a su operador estructurando la promesa del cliente, dictando normativas al instante y redactando ejecuciones omnicanales para cerrar el ticket.
+                </p>
+            </div>
+
+            <!-- UI DE CONSOLA ESTRICTA DE 3 COLUMNAS INTERACTIVA (Optimizada Móvil) -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-0 rounded-none lg:rounded-lg overflow-visible lg:overflow-hidden lg:console-shadow border-none lg:border border-[#1e293b] bg-transparent lg:bg-[#0f172a] w-full max-w-6xl mx-auto min-h-0 lg:min-h-[550px] fade-in-up font-sans text-slate-200">
+                
+                <!-- COLUMNA 1: Expediente e Interacciones (Widget Móvil) -->
+                <div class="flex flex-col rounded-xl lg:rounded-none border lg:border-b-0 lg:border-r border-[#1e293b] bg-[#0A1930] overflow-hidden shadow-lg lg:shadow-none">
+                    <div class="px-4 py-3 flex items-center gap-2 border-b border-[#1e293b] bg-[#06142E]">
+                        <i class="fas fa-file-invoice text-aura-slate text-sm"></i>
+                        <span class="text-[11px] font-bold text-white uppercase tracking-widest">Expediente e Interacciones</span>
+                    </div>
+                    
+                    <!-- Pestañas Interactivas (Swipeable en Móvil) -->
+                    <div class="flex text-[9px] sm:text-[10px] font-semibold border-b border-[#1e293b] bg-[#0A1930] overflow-x-auto scrollbar-hide snap-x">
+                        <button onclick="changeTicket('grales')" id="tab-grales" class="snap-start px-3 py-3 border-b-2 border-aura-light text-white whitespace-nowrap transition-colors focus:outline-none">Datos Grales</button>
+                        <button onclick="changeTicket('vencidos')" id="tab-vencidos" class="snap-start px-3 py-3 border-b-2 border-transparent text-aura-slate hover:text-white flex items-center gap-1 whitespace-nowrap transition-colors focus:outline-none"><div class="w-2 h-2 rounded-full bg-aura-danger"></div> Vencidos</button>
+                        <button onclick="changeTicket('resolver')" id="tab-resolver" class="snap-start px-3 py-3 border-b-2 border-transparent text-aura-slate hover:text-white flex items-center gap-1 whitespace-nowrap transition-colors focus:outline-none"><div class="w-2 h-2 rounded-full bg-aura-warning"></div> Por Resolver</button>
+                        <button onclick="changeTicket('resueltos')" id="tab-resueltos" class="snap-start px-3 py-3 border-b-2 border-transparent text-aura-slate hover:text-white flex items-center gap-1 whitespace-nowrap transition-colors focus:outline-none"><div class="w-2 h-2 rounded-full bg-aura-success"></div> Resueltos</button>
+                    </div>
+                    
+                    <!-- Datos del Ticket Activo -->
+                    <div class="p-4 sm:p-6 flex-1 text-xs sm:text-sm font-medium text-slate-300 space-y-3 sm:space-y-4">
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="text-aura-slate font-normal">Nombre:</span>
+                            <span class="col-span-2 text-white truncate" id="t-nombre">José Alfredo</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="text-aura-slate font-normal">Apellido:</span>
+                            <span class="col-span-2 text-white truncate" id="t-apellido">Mendoza</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="text-aura-slate font-normal">Empresa:</span>
+                            <span class="col-span-2 text-white truncate" id="t-empresa">Agro Michoacán S.A. de C.V.</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="text-aura-slate font-normal">Correo:</span>
+                            <span class="col-span-2 text-white truncate" id="t-correo">j.alfredo@agromichoacan.com</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2">
+                            <span class="text-aura-slate font-normal">Teléfono:</span>
+                            <span class="col-span-2 text-white truncate" id="t-tel">+52 451 102 3489</span>
+                        </div>
+                        <div class="grid grid-cols-3 gap-2 mt-4 sm:mt-6 pt-4 border-t border-[#1e293b]">
+                            <span class="text-aura-slate font-normal">Estatus Fáctico:</span>
+                            <span class="col-span-2 text-aura-success font-bold uppercase tracking-widest text-[10px] sm:text-[11px]" id="t-estatus">Cuenta al Corriente</span>
+                        </div>
+
+                        <!-- Área Dropzone Carga Archivos -->
+                        <div class="mt-4 sm:mt-6 border-2 border-dashed border-[#1e293b] rounded-lg bg-[#06142E]/30 p-4 text-center group hover:border-aura-light/50 hover:bg-[#06142E]/60 transition-all duration-300 cursor-pointer">
+                            <i class="fas fa-cloud-upload-alt text-aura-slate text-xl sm:text-2xl mb-2 group-hover:text-aura-light transition-colors group-hover:scale-110 transform duration-300"></i>
+                            <span class="block text-[10px] sm:text-[11px] text-slate-300 font-medium">Alimentar Contexto (Cargar Archivo)</span>
+                            <span class="block text-[8px] sm:text-[9px] text-slate-500 mt-1">Arrastre Órdenes, Facturas o PDFs para cruce de datos IA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- COLUMNA 2: Diagnóstico IA (Widget Móvil) -->
+                <div class="flex flex-col rounded-xl lg:rounded-none border lg:border-b-0 lg:border-r border-[#1e293b] bg-[#0A1930] overflow-hidden shadow-lg lg:shadow-none">
+                    <div class="px-4 py-3 flex items-center gap-2 border-b border-[#1e293b] bg-[#06142E]">
+                        <i class="fas fa-lightbulb text-aura-warning text-sm"></i>
+                        <span class="text-[11px] font-bold text-white uppercase tracking-widest">Indicaciones para Resolución</span>
+                    </div>
+                    
+                    <div class="p-4 sm:p-6 flex-1 flex flex-col gap-4">
+                        <!-- Instrucción Base Diagnóstica -->
+                        <div class="bg-yellow-900/10 border border-yellow-700/30 rounded p-3 sm:p-4 shadow-sm transition-all" id="diagnostico-caja">
+                            <div class="flex items-center gap-2 mb-2">
+                                <i class="fas fa-clipboard-list text-yellow-500/80 text-[11px]"></i>
+                                <span class="text-[10px] uppercase tracking-widest text-yellow-500 font-bold">Diagnóstico AURA:</span>
+                            </div>
+                            <p class="text-[11px] sm:text-xs text-yellow-100/80 leading-relaxed font-light" id="t-diagnostico">
+                                Cliente reporta material dañado en entrega. Por historial impecable, la política indica reposición inmediata sin trabas. Autorizado para gatillar vale.
+                            </p>
+                        </div>
+
+                        <!-- Chat Interactivo IA vs Operador -->
+                        <div class="bg-[#06142E] border border-[#1e293b] rounded p-3 sm:p-4 shadow-sm flex-1 flex flex-col relative overflow-hidden">
+                            <div class="flex items-center justify-between mb-3 border-b border-white/5 pb-2">
+                                <div class="flex items-center gap-2">
+                                    <i class="fas fa-brain text-aura-light text-[11px]"></i>
+                                    <span class="text-[9px] sm:text-[10px] uppercase tracking-widest text-aura-light font-bold">Interacción Copiloto</span>
+                                </div>
+                                <div class="w-1.5 h-1.5 rounded-full bg-aura-success animate-pulse"></div>
+                            </div>
+                            
+                            <!-- Historial Dinámico con Altura Limitada en Móvil para scroll interno -->
+                            <div class="flex-1 overflow-y-auto space-y-3 pr-2 scrollbar-aura text-[10px] sm:text-[11px] min-h-[150px] max-h-[200px] lg:max-h-none" id="chat-history">
+                                <!-- El contenido inicial se carga por JS -->
+                            </div>
+                            
+                            <!-- Input Simulado -->
+                            <div class="mt-3 pt-3 border-t border-white/5 flex gap-2 opacity-50">
+                                <input type="text" disabled placeholder="Consulte reglas o normativas a la IA..." class="w-full bg-transparent border border-[#1e293b] rounded px-2 py-1.5 text-[10px] sm:text-[11px] text-slate-400 focus:outline-none">
+                                <button disabled class="bg-[#1e293b] text-slate-400 px-3 py-1.5 rounded flex-shrink-0"><i class="fas fa-paper-plane"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón Generar Verde Oscuro -->
+                    <div class="bg-aura-success/10 px-4 py-3 sm:py-4 text-center border-t border-aura-success/20 cursor-default">
+                        <span class="text-[10px] sm:text-[11px] uppercase tracking-widest font-bold text-aura-success flex items-center justify-center gap-2 opacity-70">
+                            <i class="fas fa-magic"></i> IA Formulando Alternativas...
+                        </span>
+                    </div>
+                </div>
+
+                <!-- COLUMNA 3: Ejecución (Widget Móvil) -->
+                <div class="flex flex-col rounded-xl lg:rounded-none border border-[#1e293b] lg:border-none bg-[#0A1930] overflow-hidden shadow-lg lg:shadow-none">
+                    <div class="px-4 py-3 flex items-center gap-2 border-b border-[#1e293b] bg-[#06142E]">
+                        <i class="fas fa-rocket text-[#ec4899] text-sm"></i>
+                        <span class="text-[11px] font-bold text-white uppercase tracking-widest">Ejecución de la Solución</span>
+                    </div>
+
+                    <div class="p-4 sm:p-6 flex-1 flex flex-col gap-4 sm:gap-5">
+                        <!-- Selector de Canal Interactivo -->
+                        <div>
+                            <span class="text-[9px] sm:text-[10px] font-bold text-aura-slate mb-2 block">1. CANAL DE COMUNICACIÓN OMNICANAL:</span>
+                            <div class="grid grid-cols-2 gap-2">
+                                <button onclick="changeChannel('correo')" id="btn-ch-correo" class="border border-[#1e293b] bg-[#06142E] rounded px-2 py-2 flex items-center justify-center sm:justify-start gap-2 text-[9px] sm:text-[11px] text-slate-300 hover:border-white/30 transition-all focus:outline-none"><i class="fas fa-envelope"></i> Correo</button>
+                                <button onclick="changeChannel('whatsapp')" id="btn-ch-whatsapp" class="border border-aura-light bg-aura-base/20 rounded px-2 py-2 flex items-center justify-center sm:justify-start gap-2 text-[9px] sm:text-[11px] text-white font-semibold shadow-[0_0_10px_rgba(59,130,246,0.3)] transition-all focus:outline-none"><i class="fab fa-whatsapp text-aura-light text-sm"></i> WhatsApp</button>
+                                <button onclick="changeChannel('llamada')" id="btn-ch-llamada" class="border border-[#1e293b] bg-[#06142E] rounded px-2 py-2 flex items-center justify-center sm:justify-start gap-2 text-[9px] sm:text-[11px] text-slate-300 hover:border-white/30 transition-all focus:outline-none"><i class="fas fa-phone"></i> Llamada</button>
+                                <button onclick="changeChannel('verbal')" id="btn-ch-verbal" class="border border-[#1e293b] bg-[#06142E] rounded px-2 py-2 flex items-center justify-center sm:justify-start gap-2 text-[9px] sm:text-[11px] text-slate-300 hover:border-white/30 transition-all focus:outline-none"><i class="fas fa-user-friends"></i> Físico</button>
+                            </div>
+                        </div>
+
+                        <!-- Espacio de Trabajo / Borrador -->
+                        <div class="flex-1 flex flex-col">
+                            <span class="text-[9px] sm:text-[10px] font-bold text-aura-slate mb-2 block">2. ÁREA DE TRABAJO AUTOMATIZADA:</span>
+                            
+                            <!-- Contenedor Dinámico Workspace -->
+                            <div class="border border-[#1e293b] rounded flex-1 flex flex-col bg-[#06142E] shadow-sm overflow-hidden min-h-[120px] transition-all duration-300" id="workspace-container">
+                                <!-- Contenido de WhatsApp (Por Defecto) -->
+                                <div class="bg-[#0f2942] px-3 py-2 border-b border-white/5 flex items-center gap-2">
+                                    <i class="fab fa-whatsapp text-aura-success text-[10px]"></i>
+                                    <span class="text-[10px] font-bold text-white">Plantilla WhatsApp Cliente:</span>
+                                </div>
+                                <div class="p-3 sm:p-4 text-[10px] sm:text-xs text-slate-300 leading-relaxed flex-1 font-medium bg-[#0A1930] rounded-b">
+                                    Hola Don José Alfredo, le saluda Erika de Atención a Clientes. Le confirmo que el reporte de Agro Michoacán ha sido procesado a su favor. Su vale de reposición estará disponible en oficina este Jueves después de las 2:00 PM. ¡Quedo a sus órdenes!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Botón Enviar Dinámico -->
+                    <button class="bg-aura-base py-3 sm:py-4 text-center hover:bg-aura-light transition-colors cursor-pointer mx-4 mb-4 rounded shadow-[0_0_15px_rgba(26,86,219,0.4)] focus:outline-none group">
+                        <span class="text-[10px] sm:text-[11px] uppercase tracking-widest font-bold text-white flex items-center justify-center gap-2" id="btn-exec-action">
+                            <i class="fab fa-whatsapp text-sm group-hover:scale-110 transition-transform"></i> Enviar a WhatsApp y Cerrar
+                        </span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="roadmap" class="py-20 sm:py-24 bg-[#0A1930] border-t border-white/5 relative z-10 focus-section">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl">
+            <div class="text-center mb-16 fade-in-up">
+                <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.3em] text-aura-light font-bold block mb-3">La Evolución del Departamento CX</span>
+                <h2 class="text-3xl md:text-4xl font-serif text-white mb-6">Metodología de Adopción Gradual</h2>
+                <div class="w-16 h-[1px] bg-aura-light mx-auto mb-6"></div>
+                <p class="text-slate-300 text-sm font-normal max-w-2xl mx-auto mb-8">
+                    La implementación no causa caos operativo. Escalamos la madurez de su departamento y capacitamos a su personal a través de 4 hitos controlados.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-8">
+                <!-- Hito 1 -->
+                <div class="bg-[#06142E] border-2 border-aura-success/50 p-6 rounded-lg fade-in-up relative overflow-visible group hover:bg-[#0A1930] transition-colors shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+                    <!-- Etiqueta Flotante Animada -->
+                    <div class="absolute -top-3 -right-3 bg-aura-success text-white text-[10px] font-bold px-4 py-1.5 rounded-full uppercase tracking-widest animate-bounce shadow-[0_0_15px_rgba(16,185,129,0.6)] z-20">
+                        ¡Freemium Gratis!
+                    </div>
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-aura-success/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-150"></div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-aura-success font-bold block mb-3 font-mono">Hito 1 / El Origen</span>
+                    <h4 class="text-lg font-serif text-white mb-2">Copiloto Genérico</h4>
+                    <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-normal relative z-10">
+                        La IA asiste al operador mediante buenas prácticas. Estructura la atención, redacta protocolos y utiliza los canales adecuados sin ejecutar tareas autónomas. <strong class="text-white">Esta fase le permite experimentar el valor sin costo inicial.</strong>
+                    </p>
+                </div>
+
+                <!-- Hito 2 -->
+                <div class="bg-[#06142E] border border-white/5 p-6 rounded-lg fade-in-up relative overflow-hidden group hover:border-aura-light/50 transition-colors" style="transition-delay: 100ms;">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-aura-light/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-150"></div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-aura-light font-bold block mb-3 font-mono">Hito 2 / Aprendizaje</span>
+                    <h4 class="text-lg font-serif text-white mb-2">Autonomía Supervisada</h4>
+                    <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-normal">
+                        La IA interactúa, pero el humano valida y aprueba acciones. En esta fase el supervisor toma conciencia real del aprendizaje y visualiza cómo su área está siendo profesionalizada.
+                    </p>
+                </div>
+
+                <!-- Hito 3 / Influencia -->
+                <div class="bg-[#06142E] border border-white/5 p-6 rounded-lg fade-in-up relative overflow-hidden group hover:border-corporate-gold/50 transition-colors" style="transition-delay: 200ms;">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-corporate-gold/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-150"></div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-corporate-gold font-bold block mb-3 font-mono">Hito 3 / Influencia</span>
+                    <h4 class="text-lg font-serif text-white mb-2">Optimización Total</h4>
+                    <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-normal">
+                        <strong>Procesos Complejos:</strong> No se trata solo de tecnología, sino de la profesionalización profunda del área. Su personal ahora es <strong>influyente hacia afuera y hacia adentro</strong>. Ya no solo resuelven de forma autónoma; ahora auditan y exigen que las demás áreas cumplan las promesas hechas al cliente.
+                    </p>
+                </div>
+
+                <!-- Hito 4 / Consolidación -->
+                <div class="bg-[#06142E] border border-white/5 p-6 rounded-lg fade-in-up relative overflow-hidden group hover:border-purple-500/50 transition-colors" style="transition-delay: 300ms;">
+                    <div class="absolute top-0 right-0 w-16 h-16 bg-purple-500/5 rounded-bl-full -mr-8 -mt-8 transition-transform group-hover:scale-150"></div>
+                    <span class="text-[10px] uppercase tracking-[0.2em] text-purple-400 font-bold block mb-3 font-mono">Hito 4 / Consolidación</span>
+                    <h4 class="text-lg font-serif text-white mb-2">Orquestación Multiagente</h4>
+                    <p class="text-[11px] sm:text-xs text-slate-300 leading-relaxed font-normal">
+                        <strong>Visión Integral:</strong> El departamento CX es orquestado por sistemas profundamente conectados. Los sistemas estructurales de la empresa (ERP, WMS) se vinculan definitivamente al servicio al cliente. Los humanos se enfocan en gestionar la estrategia, casos VIP y de alto valor emocional.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION CORPORATIVO -->
+    <section class="py-16 sm:py-24 bg-[#0A1930] relative z-10 border-t border-white/5 focus-section">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-12 max-w-5xl">
+            <div class="border border-aura-light/30 rounded-xl bg-[#06142E] p-8 md:p-16 shadow-[0_0_40px_rgba(59,130,246,0.1)] text-center relative overflow-hidden">
+                <!-- Efecto visual sutil de fondo CTA -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-aura-light/5 rounded-full blur-3xl -mr-20 -mt-20"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-aura-light/5 rounded-full blur-3xl -ml-20 -mb-20"></div>
+
+                <h2 class="text-xl md:text-3xl font-light tracking-[0.2em] text-white uppercase mb-6 relative z-10">
+                    El Centro Neurálgico de su Empresa
+                </h2>
+                
+                <p class="text-slate-400 text-sm leading-relaxed font-light mb-8 max-w-3xl mx-auto relative z-10">
+                    Deje de ver a su recepción y redes sociales como simples buzones de recados. Conviértalos en el <strong class="text-white font-medium">único canal responsable</strong> de gestionar, resolver de raíz y retener financieramente el valor de sus clientes.
+                </p>
+                
+                <div class="bg-aura-light/5 border border-aura-light/20 rounded-lg p-5 mb-10 max-w-2xl mx-auto relative z-10 backdrop-blur-sm">
+                    <p class="text-xs sm:text-sm text-slate-300 font-normal leading-relaxed">
+                        <strong class="text-aura-light font-semibold uppercase tracking-wider block mb-2 text-[10px] sm:text-[11px]"><i class="fas fa-gift mr-1"></i> Adopción Sin Fricción (Hito 1)</strong>
+                        Instalamos el Copiloto de AURA y <span class="text-white font-medium">capacitamos a su personal de manera gratuita</span> mediante nuestro modelo Freemium. Conozca el impacto real del servicio en su operación antes de escalar.
+                    </p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6 relative z-10">
+                    <a href="https://wa.me/523318190928?text=Hola,%20me%20interesa%20conocer%20el%20modelo%20Freemium%20del%20Copiloto%20AURA." target="_blank" class="btn-aura w-full md:w-auto border-aura-success text-aura-success hover:border-green-400 hover:text-white shadow-[0_0_15px_rgba(16,185,129,0.1)]">
+                        <i class="fas fa-unlock-alt text-lg mr-2"></i> Me interesa el Freemium
+                    </a>
+                    <a href="https://wa.me/523318190928?text=Hola,%20estoy%20interesado%20en%20AURA%20para%20escalar%20mi%20%C3%A1rea%20de%20Atenci%C3%B3n%20a%20Clientes." target="_blank" class="btn-aura w-full md:w-auto">
+                        <i class="fab fa-whatsapp text-lg mr-2"></i> Agendar Demostración
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacto" class="bg-corporate-darker text-slate-400 pt-20 pb-10 border-t border-[#005f73]/20 relative z-10 focus-section">
+        <div class="container mx-auto px-6 lg:px-12 grid md:grid-cols-12 gap-12 mb-16">
+           <div class="md:col-span-4 flex flex-col justify-between items-center md:items-start text-center md:text-left">
+                <div>
+                    <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo Logo" class="h-12 lg:h-14 w-auto mb-6 object-contain">
+                    <p class="text-[9px] uppercase tracking-[0.3em] text-corporate-gold font-bold mb-4">Montecristo AInsights</p>
+                    <p class="text-[11px] sm:text-xs text-slate-400 leading-relaxed font-light">
+                        Diseño e industrialización de soluciones operativas basadas en inteligencia conversacional y optimización de pipelines de datos humanos.
+                    </p>
+                </div>
+           </div>
+
+           <div class="md:col-span-2 text-center md:text-left">
+               <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-corporate-gold font-montserrat">Explorar Suite</h5>
+               <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                   <li><a href="MIND.html" class="hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2"><i class="fas fa-angle-right text-[8px]"></i> M.I.N.D.</a></li>
+                   <li><a href="EVOS.html" class="hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2"><i class="fas fa-angle-right text-[8px]"></i> EVOS</a></li>
+                   <li><a href="#" class="text-corporate-gold hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2"><i class="fas fa-circle-nodes text-[8px]"></i> AURA</a></li>
+                   <li><a href="web 2.html#nwid" class="hover:text-white transition-colors flex items-center justify-center md:justify-start gap-2"><i class="fas fa-angle-right text-[8px]"></i> NWiD</a></li>
+               </ul>
+           </div>
+           
+           <div class="md:col-span-2 text-center md:text-left">
+               <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-corporate-gold font-montserrat">Gobernanza</h5>
+               <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                   <li><a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a></li>
+                   <li><a href="#" class="hover:text-white transition-colors">Términos de Uso</a></li>
+               </ul>
+           </div>
+
+           <div class="md:col-span-4 text-center md:text-right flex flex-col items-center md:items-end">
+               <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-corporate-gold font-montserrat">Contacto Directo</h5>
+               <a href="mailto:team@montecristoainsights.com" class="text-lg lg:text-2xl font-serif text-white block mb-4 hover:text-corporate-gold transition-colors">team@montecristoainsights.com</a>
+               
+               <a href="https://wa.me/523318190928" target="_blank" class="text-sm font-medium text-slate-300 hover:text-corporate-gold font-montserrat flex items-center justify-center md:justify-end gap-2 transition-colors">
+                   <i class="fab fa-whatsapp text-xl text-[#25D366]"></i> +52 33 1819 0928
+               </a>
+               
+               <!-- Bloque de Redes Sociales Completo bajo el nuevo Dominio -->
+               <div class="flex justify-center md:justify-end gap-3 mt-8 flex-wrap">
+                   <a href="https://www.linkedin.com/company/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-corporate-gold hover:text-corporate-gold hover:bg-corporate-gold/10 transition-all duration-300"><i class="fab fa-linkedin-in"></i></a>
+                   <a href="https://www.instagram.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-corporate-gold hover:text-corporate-gold hover:bg-corporate-gold/10 transition-all duration-300"><i class="fab fa-instagram"></i></a>
+                   <a href="https://www.facebook.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-corporate-gold hover:text-corporate-gold hover:bg-corporate-gold/10 transition-all duration-300"><i class="fab fa-facebook-f"></i></a>
+                   <a href="https://www.tiktok.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-corporate-gold hover:text-corporate-gold hover:bg-corporate-gold/10 transition-all duration-300"><i class="fa-brands fa-tiktok"></i></a>
+                   <a href="https://www.youtube.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-corporate-gold hover:text-corporate-gold hover:bg-corporate-gold/10 transition-all duration-300"><i class="fab fa-youtube"></i></a>
+               </div>
+           </div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+            <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat">© 2026 Montecristo AInsights. Todos los derechos reservados.</p>
+            <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat font-serif">Arquitectura de Negocios y Transformación</p>
+        </div>
+   </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // 1. Navbar Scroll Effect
+            const header = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 40) {
+                    header.classList.add('bg-[#06142E]/95', 'shadow-lg');
+                    header.classList.remove('bg-[#06142E]/90');
+                } else {
+                    header.classList.remove('bg-[#06142E]/95', 'shadow-lg');
+                    header.classList.add('bg-[#06142E]/90');
+                }
+            });
+
+            // 2. Animaciones Scroll (Fade-In-Up) y Focus para Mobile
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.15 };
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-active');
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.fade-in-up, .focus-section').forEach((elem) => observer.observe(elem));
+
+            // 3. LÓGICA DE LA CONSOLA INTERACTIVA (SIMULADOR DE AURA)
+            
+            // Base de Datos Simulada para Pestañas
+            const ticketData = {
+                grales: {
+                    nombre: "José Alfredo", apellido: "Mendoza", empresa: "Agro Michoacán S.A. de C.V.",
+                    correo: "j.alfredo@agromichoacan.com", tel: "+52 451 102 3489",
+                    estatusLabel: "Cuenta al Corriente", estatusColor: "text-aura-success",
+                    diagColor: "bg-yellow-900/10 border-yellow-700/30 text-yellow-500",
+                    diagnostico: "Cliente reporta material dañado en entrega. Por historial impecable, la política indica reposición inmediata sin trabas. Autorizado para gatillar vale.",
+                    chat: [
+                        { role: 'op', text: '¿Existen penalizaciones o letras chiquitas si le autorizo el vale de reposición hoy mismo?' },
+                        { role: 'ai', text: 'Revisando contrato B2B-89 de Agro Michoacán: No hay penalidad si el reporte se hizo en las primeras 48 hrs. El cliente lo hizo a las 12 hrs. Procede sin riesgo financiero.' }
+                    ]
+                },
+                vencidos: {
+                    nombre: "María Luisa", apellido: "Gómez", empresa: "Logística Transportes del Norte",
+                    correo: "ml.gomez@logisticanorte.mx", tel: "+52 818 555 0192",
+                    estatusLabel: "Pago Atrasado (14 días)", estatusColor: "text-aura-danger",
+                    diagColor: "bg-red-900/10 border-red-700/30 text-red-500",
+                    diagnostico: "Alerta: El cliente solicita soporte técnico pero presenta adeudo vencido. La política bloquea el despacho presencial hasta regularización de pagos.",
+                    chat: [
+                        { role: 'op', text: 'La cliente está muy molesta, exige soporte físico ya mismo o cancela el servicio. ¿Qué le digo?' },
+                        { role: 'ai', text: 'Mantén empatía. Sugiero aplicar Protocolo de Retención C-4: Ofrécele enviar un link de pago por WhatsApp en este instante. Si abona el 50%, el sistema me permite liberar al técnico hacia su ubicación en 15 minutos.' }
+                    ]
+                },
+                resolver: {
+                    nombre: "Carlos", apellido: "Vázquez", empresa: "Constructora Civica",
+                    correo: "compras@civica.com", tel: "+52 33 1122 3344",
+                    estatusLabel: "Validando Garantía", estatusColor: "text-aura-warning",
+                    diagColor: "bg-orange-900/10 border-orange-700/30 text-orange-400",
+                    diagnostico: "Solicitud de garantía por defecto de fábrica. Sistema ERP indica que el producto fue comprado hace 11 meses. Entra en cobertura. Proceder con el levantamiento de ticket técnico.",
+                    chat: [
+                        { role: 'op', text: 'No encuentro el manual de cobertura para este modelo en específico. ¿Cubre piezas de desgaste?' },
+                        { role: 'ai', text: 'Consultando base de conocimientos WMS: Las piezas de desgaste (filtros y sellos) solo tienen 6 meses de cobertura. Debes informarle que aplicará un costo de refacción, pero la mano de obra será gratuita.' }
+                    ]
+                },
+                resueltos: {
+                    nombre: "Ana Paula", apellido: "Ríos", empresa: "Estudio Diseño PR",
+                    correo: "ana@estudiopr.net", tel: "+52 55 9876 5432",
+                    estatusLabel: "Servicio Entregado", estatusColor: "text-aura-success",
+                    diagColor: "bg-green-900/10 border-green-700/30 text-green-500",
+                    diagnostico: "El producto fue entregado y calibrado en sitio. El cliente firmó la hoja de conformidad. Listo para enviar encuesta de satisfacción automatizada (NPS).",
+                    chat: [
+                        { role: 'op', text: 'Cerrando el ticket. ¿Hay alguna oportunidad de up-selling con este cliente?' },
+                        { role: 'ai', text: 'Sí. El perfil del CRM indica que suele comprar expansiones cada año. Sugiero adjuntar en el correo de cierre un descuento del 10% válido por 48 horas para la renovación de su licencia pro.' }
+                    ]
+                }
+            };
+
+            // Base de Datos Simulada para Canales de Comunicación
+            const channelData = {
+                correo: {
+                    headerIcon: "fas fa-envelope text-slate-300",
+                    headerText: "Borrador de Correo Institucional:",
+                    content: "Asunto: Resolución de Reporte | Agro Michoacán\n\nEstimado José Alfredo,\nLe informamos que su reporte ha sido evaluado favorablemente. Hemos emitido un vale de reposición, el cual podrá hacer efectivo en nuestras instalaciones a partir de este Jueves después de las 14:00 hrs.\n\nAtentamente,\nDepartamento de Experiencia de Cliente",
+                    btnIcon: "fas fa-paper-plane",
+                    btnText: "Enviar Correo y Cerrar",
+                    btnColor: "bg-aura-base hover:bg-aura-light text-white"
+                },
+                whatsapp: {
+                    headerIcon: "fab fa-whatsapp text-aura-success",
+                    headerText: "Plantilla WhatsApp Cliente:",
+                    content: "Hola Don José Alfredo, le saluda Erika de Atención a Clientes. Le confirmo que el reporte de Agro Michoacán ha sido procesado a su favor. Su vale de reposición estará disponible en oficina este Jueves después de las 2:00 PM. ¡Quedo a sus órdenes!",
+                    btnIcon: "fab fa-whatsapp",
+                    btnText: "Enviar a WhatsApp y Cerrar",
+                    btnColor: "bg-aura-success hover:bg-green-600 text-white"
+                },
+                llamada: {
+                    headerIcon: "fas fa-headset text-purple-400",
+                    headerText: "Guion de Lectura para Llamada:",
+                    content: "[Tono empático]\n'Buenos días, ¿hablo con el señor José Alfredo?'\n'Le llamo de Montecristo para darle seguimiento a su reporte de material. Le tenemos buenas noticias: ya fue autorizado su vale de reposición. ¿Le queda bien pasar a recogerlo este Jueves por la tarde?'",
+                    btnIcon: "fas fa-check-circle",
+                    btnText: "Registrar Llamada en CRM",
+                    btnColor: "bg-purple-600 hover:bg-purple-500 text-white"
+                },
+                verbal: {
+                    headerIcon: "fas fa-user-tie text-corporate-gold",
+                    headerText: "Instrucción de Resolución en Mostrador:",
+                    content: "El cliente está físicamente en recepción.\n1. Confirmar su identidad (INE o Gafete).\n2. Indicarle que su reposición está autorizada para el Jueves.\n3. Entregar formato pre-impreso de 'Resolución en Trámite' y sellar de recibido.",
+                    btnIcon: "fas fa-print",
+                    btnText: "Imprimir Formato y Cerrar",
+                    btnColor: "bg-corporate-dark hover:bg-corporate-gold text-white"
+                }
+            };
+
+            // Función Global: Cambiar Ticket
+            window.changeTicket = function(tabId) {
+                // Reset de estilos de pestañas
+                ['grales', 'vencidos', 'resolver', 'resueltos'].forEach(id => {
+                    const el = document.getElementById(`tab-${id}`);
+                    if(el) {
+                        el.classList.remove('border-aura-light', 'text-white');
+                        el.classList.add('border-transparent', 'text-aura-slate');
+                    }
+                });
+                
+                // Activar pestaña seleccionada
+                const activeTab = document.getElementById(`tab-${tabId}`);
+                if(activeTab) {
+                    activeTab.classList.remove('border-transparent', 'text-aura-slate');
+                    activeTab.classList.add('border-aura-light', 'text-white');
+                }
+
+                // Inyectar datos
+                const data = ticketData[tabId];
+                document.getElementById('t-nombre').innerText = data.nombre;
+                document.getElementById('t-apellido').innerText = data.apellido;
+                document.getElementById('t-empresa').innerText = data.empresa;
+                document.getElementById('t-correo').innerText = data.correo;
+                document.getElementById('t-tel').innerText = data.tel;
+                
+                const estatusEl = document.getElementById('t-estatus');
+                estatusEl.innerText = data.estatusLabel;
+                estatusEl.className = `col-span-2 font-bold uppercase tracking-widest text-[11px] ${data.estatusColor}`;
+
+                // Inyectar Diagnóstico
+                const diagBox = document.getElementById('diagnostico-caja');
+                diagBox.className = `border rounded p-4 shadow-sm transition-all duration-300 ${data.diagColor}`;
+                document.getElementById('t-diagnostico').innerText = data.diagnostico;
+                
+                // Inyectar Chat de la IA
+                const chatContainer = document.getElementById('chat-history');
+                chatContainer.style.opacity = '0.5';
+                setTimeout(() => {
+                    chatContainer.innerHTML = '';
+                    data.chat.forEach(msg => {
+                        const isOp = msg.role === 'op';
+                        chatContainer.innerHTML += `
+                            <div class="flex ${isOp ? 'justify-end' : 'justify-start'} w-full">
+                                <div class="max-w-[85%] rounded p-2.5 ${isOp ? 'bg-aura-base/20 text-slate-200 rounded-tr-none border border-aura-light/30' : 'bg-[#1e293b]/50 text-slate-300 rounded-tl-none border border-white/5'} shadow-sm">
+                                    <span class="text-[8px] uppercase tracking-widest block mb-1 opacity-50 font-mono font-bold">${isOp ? 'Operador Humano' : 'AURA Agent'}</span>
+                                    <p class="leading-relaxed font-light">${msg.text}</p>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    chatContainer.style.opacity = '1';
+                }, 150);
+            };
+
+            // Función Global: Cambiar Canal
+            window.changeChannel = function(chId) {
+                // Reset de estilos de botones de canal
+                ['correo', 'whatsapp', 'llamada', 'verbal'].forEach(id => {
+                    const el = document.getElementById(`btn-ch-${id}`);
+                    if(el) {
+                        el.classList.remove('border-aura-light', 'bg-aura-base/20', 'text-white', 'shadow-[0_0_10px_rgba(59,130,246,0.3)]', 'font-semibold');
+                        el.classList.add('border-[#1e293b]', 'bg-[#06142E]', 'text-slate-300');
+                    }
+                });
+
+                // Activar canal seleccionado
+                const activeBtn = document.getElementById(`btn-ch-${chId}`);
+                if(activeBtn) {
+                    activeBtn.classList.remove('border-[#1e293b]', 'bg-[#06142E]', 'text-slate-300');
+                    activeBtn.classList.add('border-aura-light', 'bg-aura-base/20', 'text-white', 'shadow-[0_0_10px_rgba(59,130,246,0.3)]', 'font-semibold');
+                }
+
+                // Reconstruir el Workspace
+                const data = channelData[chId];
+                const workspace = document.getElementById('workspace-container');
+                
+                // Efecto fade interno
+                workspace.style.opacity = '0.5';
+                setTimeout(() => {
+                    workspace.innerHTML = `
+                        <div class="bg-[#0f2942] px-3 py-2 border-b border-white/5 flex items-center gap-2">
+                            <i class="${data.headerIcon} text-[10px]"></i>
+                            <span class="text-[10px] font-bold text-white">${data.headerText}</span>
+                        </div>
+                        <div class="p-4 text-[11px] sm:text-xs text-slate-300 leading-relaxed flex-1 font-medium bg-[#0A1930] rounded-b whitespace-pre-wrap">${data.content}</div>
+                    `;
+                    workspace.style.opacity = '1';
+                }, 150);
+
+                // Actualizar Botón de Ejecución Final
+                const execBtn = document.getElementById('btn-exec-action').parentElement;
+                execBtn.className = `${data.btnColor} py-4 text-center transition-colors cursor-pointer mx-4 mb-4 rounded shadow-[0_0_15px_rgba(0,0,0,0.4)] focus:outline-none group`;
+                document.getElementById('btn-exec-action').innerHTML = `
+                    <i class="${data.btnIcon} text-sm group-hover:scale-110 transition-transform"></i> ${data.btnText}
+                `;
+            };
+
+            // Inicializar datos al cargar la página
+            window.changeTicket('grales');
+            window.changeChannel('whatsapp');
+        });
+    </script>
+</body>
+</html>
