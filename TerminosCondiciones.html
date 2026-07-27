@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Términos y Condiciones | Montecristo AInsights</title>
+    
+    <!-- Meta SEO Básico -->
+    <meta name="description" content="Términos y Condiciones Generales de los Servicios de Consultoría Monitorizada de Montecristo AInsights.">
+    <meta name="theme-color" content="#16262e">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --color-dark: #16262e;
+            --color-dark-light: #1b2f38;
+            --color-gold: #e59903;
+            --color-gold-light: #ffb733;
+            --color-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-dark);
+            background-color: #16262e;
+            overflow-x: hidden;
+            font-weight: 400;
+        }
+        
+        .font-serif {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #c68400 0%, #e59903 50%, #ffe082 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-architect {
+            position: relative;
+            padding: 0.8rem 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            z-index: 20;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-architect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: var(--color-gold);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        
+        .btn-architect:hover::before {
+            width: 100%;
+        }
+
+        .nav-scrolled {
+            background: rgba(22, 38, 46, 0.98);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Estilos específicos para el documento legal */
+        .legal-content h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(229, 153, 3, 0.3);
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) { .legal-content h2 { font-size: 2.25rem; } }
+
+        .legal-content h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.025em;
+        }
+
+        .legal-content p {
+            color: #94a3b8;
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .legal-content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            top: 0.1rem;
+            color: #e59903;
+            font-size: 0.6rem;
+        }
+
+        .legal-content strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Scrollbar personalizado para la navegación lateral */
+        .toc-container::-webkit-scrollbar { width: 4px; }
+        .toc-container::-webkit-scrollbar-track { background: transparent; }
+        .toc-container::-webkit-scrollbar-thumb { background: rgba(229, 153, 3, 0.3); border-radius: 4px; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <div id="mobile-menu" class="fixed inset-0 bg-[#16262e] z-[60] transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-white text-3xl hover:text-[#e59903] transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="/" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Inicio</a>
+            <a href="/#ecosistema" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Soluciones</a>
+            <a href="/#filosofia" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Filosofía</a>
+        </nav>
+        <div class="mt-12 flex gap-4 flex-wrap justify-center px-6">
+            <a href="https://www.linkedin.com/company/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <header class="fixed w-full top-0 z-50 transition-all duration-500 py-6 border-b border-white/10" id="main-header">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="/" class="flex items-center relative z-50">
+                 <!-- Logotipo Montecristo -->
+                 <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo AInsights" class="h-10 md:h-16 w-auto object-contain transition-all duration-300">
+            </a>
+            <nav class="hidden lg:flex items-center space-x-14">
+                <a href="/" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Inicio
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="/#ecosistema" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Soluciones
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="/#filosofia" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Filosofía
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="https://wa.me/523318190928" target="_blank" class="btn-architect text-[#e59903] border border-[#e59903]/50 hover:border-[#e59903] hover:text-[#16262e] font-semibold">
+                    Contacto
+                </a>
+            </nav>
+             <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-[#e59903] text-2xl transition-colors">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-16 lg:pt-48 lg:pb-20 bg-[#16262e] border-b border-white/5 relative overflow-hidden">
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#e59903]/30 to-transparent"></div>
+        <div class="absolute right-0 top-0 w-96 h-96 bg-[#e59903]/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center">
+            <div class="inline-flex items-center gap-4 mb-6">
+                <div class="w-8 h-[1px] bg-[#e59903]"></div>
+                <span class="text-[#e59903] font-bold tracking-[0.3em] uppercase text-[10px] font-montserrat">Marco Legal Operativo</span>
+                <div class="w-8 h-[1px] bg-[#e59903]"></div>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Términos y Condiciones Generales</h1>
+            <p class="text-slate-400 font-medium text-sm md:text-base max-w-2xl mx-auto uppercase tracking-widest">De los Servicios de Consultoría Monitorizada</p>
+            <p class="text-slate-500 text-xs mt-8">Fecha de última actualización: 20 de Julio de 2026</p>
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 bg-[#16262e] flex-grow">
+        <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-16 relative">
+            
+            <!-- Índice Lateral (Sticky) para Desktop -->
+            <aside class="hidden lg:block w-1/4 relative">
+                
+                <div class="sticky top-32 max-h-[calc(100vh-18rem)] flex flex-col toc-container pr-6 border-l border-white/5 pl-6 overflow-y-auto">
+                    <div>
+                        <h4 class="text-[#e59903] font-bold tracking-[0.2em] uppercase text-[10px] mb-8">Índice de Contenidos</h4>
+                        <nav class="space-y-4 mb-12">
+                            <a href="#apartado-1" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">1. Objeto, Aceptación y Declaraciones Base</a>
+                            <a href="#apartado-2" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">2. Reglas del Ecosistema Híbrido</a>
+                            <a href="#apartado-3" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">3. Naturaleza del Procesamiento Tecnológico</a>
+                            <a href="#apartado-4" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">4. Propiedad Intelectual y Secretos Industriales</a>
+                            <a href="#apartado-5" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">5. Términos Económicos y Facturación</a>
+                            <a href="#apartado-6" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">6. Acuerdo de Confidencialidad Cruzada</a>
+                            <a href="#apartado-7" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">7. Exclusiones de Responsabilidad (Garantías)</a>
+                            <a href="#apartado-8" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">8. Limitación Técnica y Fuerza Mayor</a>
+                            <a href="#apartado-8bis" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">8 Bis. Protocolo "Permission Gate"</a>
+                            <a href="#apartado-9" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">9. Jurisdicción y Legislación Aplicable</a>
+                            <a href="#apartado-10" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">10. Miscelánea Contractual</a>
+                        </nav>
+                    </div>
+
+                    <!-- Casilla de Aceptación Previa (Desktop) -->
+                    <div class="bg-[#1b2f38] border border-[#e59903]/30 rounded-lg p-5 shadow-lg mt-4">
+                        <label class="flex items-start gap-3 cursor-pointer group">
+                            <div class="relative flex-shrink-0 mt-0.5">
+                                <input type="checkbox" id="consent-checkbox-desktop" class="peer sr-only">
+                                <div class="w-5 h-5 border-2 border-slate-500 rounded bg-transparent peer-checked:bg-[#e59903] peer-checked:border-[#e59903] transition-colors flex items-center justify-center group-hover:border-[#e59903]">
+                                    <i class="fas fa-check text-white text-xs opacity-0 peer-checked:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <span class="text-xs text-slate-300 font-medium leading-relaxed group-hover:text-white transition-colors">
+                                Declaro expresamente que he leído, entiendo y acepto las condiciones y términos de este contrato.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="w-full lg:w-3/4 legal-content bg-white rounded-xl p-8 lg:p-12 border border-slate-200 shadow-2xl relative">
+                
+                <!-- Apartado 1 -->
+                <h2 id="apartado-1" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3); margin-top: 0;"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 1</span> OBJETO, ACEPTACIÓN Y DECLARACIONES BASE</h2>
+                
+                <h3 style="color: #1b2f38;">1.1. Naturaleza Jurídica y Objeto del Contrato</h3>
+                <p style="color: #475569;">El presente documento constituye un contrato de adhesión vinculante (en adelante, los "Términos y Condiciones") celebrado entre Montecristo AInsights (en adelante, "La Consultora") y cualquier persona física o moral que se registre, acceda, asista o interactúe con las plataformas digitales, metodologías o sesiones presenciales organizadas por la firma (en adelante, el "Usuario", el "Participante" o la "Organización").</p>
+                <p style="color: #475569;">El objeto principal de este instrumento es regular el acceso, los derechos, las obligaciones y las restricciones aplicables a la prestación de los servicios de Consultoría Monitorizada provistos por La Consultora. Estos servicios consisten en el diseño, instrumentación, ejecución y análisis automatizado de dinámicas corporativas y mesas de trabajo estructuradas, destinadas a la extracción de diagnósticos empresariales, identificación de oportunidades organizacionales, optimización de procesos y generación de modelos predictivos de afinidad y vinculación comercial.</p>
+
+                <h3 style="color: #1b2f38;">1.2. Manifestación Consentida del Consentimiento y Perfeccionamiento Contractual</h3>
+                <p style="color: #475569;">El Usuario reconoce que la aceptación de los presentes Términos y Condiciones se perfecciona y formaliza jurídicamente mediante la ocurrencia de cualquiera de las siguientes acciones afirmativas, las cuales equivalen a una firma electrónica simple de conformidad con el artículo 80 y 89 del Código de Comercio mexicano y demás legislación aplicable:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Validación Digital Previa:</strong> Al completar los flujos de registro, dar de alta perfiles profesionales o interactuar con los asistentes automatizados en canales de mensajería instantánea asignados por La Consultora antes de la ejecución del servicio.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Acceso Físico o Remoto:</strong> Al ingresar formalmente a las instalaciones, salas de conferencias, nodos presenciales o plataformas virtuales destinadas al desarrollo de la sesión de consultoría monitorizada.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Participación Activa:</strong> Al aportar información conceptual, emitir respuestas orales o escritas ante los ejercicios del programa, o interactuar en las mesas de discusión monitorizadas acústica o textualmente.</li>
+                </ul>
+                <div class="mt-4 mb-8 p-4 bg-amber-50 border-l-4 border-[#e59903] rounded-r-md">
+                    <p class="!mb-0" style="color: #92400e;"><strong style="color: #92400e;">⚖️ Advertencia Legal Obligatoria:</strong> Si el Usuario no está de acuerdo de manera parcial o total con los términos, obligaciones, exclusiones de responsabilidad y mecanismos de captura de información contenidos en este documento, deberá abstenerse de manera inmediata de registrarse, ingresar a las salas de trabajo o interactuar con los sistemas de La Consultora. Continuar con el proceso de alta o presentarse en la sesión monitorizada ratifica de forma tácita e irrevocable la adhesión al presente contrato.</p>
+                </div>
+
+                <h3 style="color: #1b2f38;">1.3. Declaraciones Base de las Partes</h3>
+                <p style="color: #475569;">A fin de dotar de plena validez jurídica al presente clausulado, las partes declaran bajo protesta de decir verdad lo siguiente:</p>
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">A. Declaraciones de La Consultora:</p>
+                <ul>
+                    <li style="color: #475569;">Ser una entidad comercial constituida de conformidad con las leyes de la República Mexicana, con plena capacidad jurídica, técnica, tecnológica y operativa para comercializar, diseñar y dirigir servicios avanzados de consultoría monitorizada de negocios.</li>
+                    <li style="color: #475569;">Contar con la infraestructura tecnológica, los sistemas de procesamiento de datos, las metodologías de análisis de interacciones y los derechos de propiedad intelectual necesarios para la correcta y lícita ejecución de los servicios objeto de este contrato.</li>
+                    <li style="color: #475569;">Operar como un facilitador y procesador neutral de información, cuyo único propósito es la estructuración científica de variables organizacionales para beneficio de las empresas participantes.</li>
+                </ul>
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">B. Declaraciones del Usuario y/o Participante:</p>
+                <ul>
+                    <li style="color: #475569;">Ser una persona física mayor de edad, con plena capacidad legal para obligarse bajo los términos del presente instrumento, o bien, ser el representante legal debidamente facultado de la persona moral a la que da de alta en el sistema, contando con los poderes e instrucciones suficientes para comprometer a su representada.</li>
+                    <li style="color: #475569;">Que los datos, información, brochures, catálogos y declaraciones operativas aportados antes, durante y a través de los eventos de consultoría monitorizada corresponden a la realidad factual de su negocio, eximiendo a La Consultora de cualquier error analítico derivado de datos falsos, sesgados o inexactos.</li>
+                    <li style="color: #475569;">Comprender a plenitud la naturaleza técnica de los servicios monitorizados, aceptando explícitamente que sus aportaciones conversacionales, textuales y corporativas serán analizadas por herramientas algorítmicas con el objetivo de generar diagnósticos organizacionales y perfiles de compatibilidad.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">1.4. Independencia y Buena Fe de las Partes</h3>
+                <p style="color: #475569;">Las partes declaran expresamente que actúan en todo momento como entidades comerciales independientes y de buena fe. El perfeccionamiento de este contrato y la participación en las dinámicas de consultoría monitorizada no constituye, bajo ninguna circunstancia, la creación de una sociedad en nombre colectivo, una asociación en participación, una relación de agencia, una coinversión (joint venture) o una relación laboral de subordinación entre La Consultora y el Usuario.</p>
+                <p style="color: #475569;">Cada una de las organizaciones participantes conserva de forma íntegra su autonomía operativa, jurídica y administrativa, siendo la relación contractual de carácter puramente mercantil para la prestación y recepción de servicios analíticos especializados.</p>
+
+                <!-- Apartado 2 -->
+                <h2 id="apartado-2" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 2</span> DESCRIPCIÓN Y REGLAS DEL ECOSISTEMA HÍBRIDO (ANTES, DURANTE Y A TRAVÉS DEL SERVICIO)</h2>
+                <p style="color: #475569;">Este apartado rige el marco operativo, los flujos logísticos y las normas de comportamiento obligatorias a las que se somete el Usuario en las distintas fases temporales que componen la prestación del servicio de Consultoría Monitorizada por parte de Montecristo AInsights. La naturaleza híbrida del servicio exige una coordinación precisa entre las herramientas digitales de captura previa y la interacción presencial o virtual en tiempo real.</p>
+
+                <h3 style="color: #1b2f38;">2.1. Fase de Ingesta y Validación Previa (Obligaciones ANTES del Servicio)</h3>
+                <p style="color: #475569;">El correcto funcionamiento de las matrices de diagnóstico analítico de La Consultora depende estrictamente de la calidad y oportunidad de la data suministrada en los canales de pre-registro. Por ello, el Usuario se obliga a cumplir con las siguientes directrices operativas:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Veracidad y Exactitud del Perfilado:</strong> El Usuario se compromete a suministrar información fáctica, verificable y libre de alteraciones respecto a la situación fiscal, legal, comercial y operativa de su empresa. Está estrictamente prohibida la suplantación de identidades corporativas o la declaración de métricas de facturación, capacidades instaladas o infraestructuras ficticias.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Interacción con los Canales de Mensajería e Interfaces Automatizadas:</strong> El proceso de alta técnica requiere que el Usuario complete en su totalidad las interacciones solicitadas por los asistentes virtuales y formularios digitales de La Consultora. La omisión, el abandono del flujo de registro o la entrega de respuestas ambiguas facultará a La Consultora a restringir el acceso del Participante a las salas de trabajo presenciales, sin responsabilidad alguna y sin derecho a reembolso de las tarifas cubiertas, debido a la imposibilidad de precargar su vector de datos en el sistema de asignación de mesas.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Plazos de Suministro:</strong> Toda la información requerida en la fase digital previa deberá completarse con la anticipación mínima que La Consultora determine en la convocatoria correspondiente, garantizando así la ventana de tiempo necesaria para la calibración algorítmica y el procesamiento semántico inicial.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">2.2. Fase de Interacción Estructurada en Sitio (Obligaciones DURANTE el Servicio)</h3>
+                <p style="color: #475569;">Una vez que el Participante ingresa formalmente a la sala de conferencias, nodo físico o entorno virtual de Consultoría Monitorizada, queda sujeto a las reglas dinámicas de la metodología de La Consultora:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Cumplimiento de la Distribución y Asignación de Celdas:</strong> El Participante deberá ocupar de forma exclusiva el asiento, mesa o celda de trabajo que el sistema le asigne basándose en su perfil analítico inicial. Quedan estrictamente prohibidos los intercambios voluntarios de lugares, las migraciones no autorizadas de mesa o la alteración de la disposición física diseñada para la sesión. Cualquier modificación no coordinada corrompe las variables de la consultoría y faculta al personal de operaciones a remover al Participante de la sesión.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Respeto al Control de Tiempos y Cronómetros Operativos:</strong> Las dinámicas monitorizadas se rigen por cronómetros analíticos estrictos visibles en las pantallas de comando general. El Usuario se obliga a iniciar y concluir sus intervenciones conversacionales, exposiciones de necesidades y rondas de debate respetando los segundos asignados a su perfil. El uso desproporcionado del tiempo en perjuicio del balance de habla de la mesa se considerará una violación a las reglas de la sesión.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Conducta en Entornos Monitorizados Acústicamente:</strong> El Usuario reconoce y acepta que las mesas de trabajo cuentan con dispositivos de monitoreo acústico local diseñados para la estructuración y atribución de intervenciones. Por lo tanto, el Participante se compromete a:
+                        <ul class="mt-2 border-l border-[#e59903]/50 pl-4 ml-2">
+                            <li class="!mb-1" style="color: #475569;">Dirigirse con el tono de voz y claridad necesarios para facilitar la transcripción algorítmica del ejercicio.</li>
+                            <li class="!mb-1" style="color: #475569;">Evitar la generación de ruidos mecánicos distractores o interferencias físicas sobre los dispositivos de captura.</li>
+                            <li class="!mb-1" style="color: #475569;">Mantener una conducta profesional, ética y de mutuo respeto corporativo, absteniéndose de utilizar lenguaje ofensivo, discriminatorio o difamatorio que vicie los metadatos de la dinámica.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">2.3. Fase de Integración de Activos Documentales (Obligaciones A TRAVÉS del Servicio)</h3>
+                <p style="color: #475569;">La profundidad y precisión de los diagnósticos finales que produce Montecristo AInsights se potencian mediante el análisis de la documentación comercial que el Usuario aporta a lo largo del proceso. Esta fase se sujeta a las siguientes estipulaciones:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Idoneidad de la Documentación Proporcionada:</strong> El Usuario es el único responsable del contenido de los brochures, catálogos de servicios, manuales de organización, portafolios de evidencia o presentaciones ejecutivas que decida cargar en la plataforma. El Usuario declara bajo protesta de decir verdad que posee los derechos de propiedad intelectual, derechos de autor o las autorizaciones corporativas suficientes para compartir dichos documentos con La Consultora y con los miembros que el flujo del servicio determine.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Indemnidad por Contenidos de Terceros:</strong> En caso de que la documentación cargada infrinja derechos de propiedad de terceros (patentes, marcas registradas o derechos de autor ajenos), el Usuario se obliga a sacar en paz y a salvo a La Consultora de cualquier reclamación, litigio, multa o controversia legal, asumiendo de forma total los costos de defensa y las consecuencias económicas que de ello deriven.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">2.4. Control de Acceso, Seguridad de la Infraestructura y Facultades de Remoción</h3>
+                <p style="color: #475569;">Montecristo AInsights se reserva el derecho exclusivo de admisión y permanencia dentro del ecosistema híbrido de Consultoría Monitorizada. A fin de garantizar la seguridad informática de las plataformas, la integridad física de los asistentes y la pureza metodológica de las sesiones, La Consultora queda plenamente facultada para suspender las credenciales de acceso digital o remover físicamente de las salas a cualquier Usuario que:</p>
+                <ul>
+                    <li style="color: #475569;">Incurra en conductas que pongan en riesgo la confidencialidad de la información expuesta por otros participantes en las celdas de trabajo.</li>
+                    <li style="color: #475569;">Intente hackear, vulnerar o alterar las interfaces de software, dispositivos de microfonía satélite o sistemas de proyección visual de La Consultora.</li>
+                    <li style="color: #475569;">Incumpla reiteradamente las instrucciones logísticas impartidas por los consultores líderes o el personal técnico de piso.</li>
+                </ul>
+                <p style="color: #475569;">La ejecución de una remoción por cualquiera de las causas anteriores implicará la pérdida inmediata de los derechos del Usuario sobre el evento en curso, la cancelación de sus reportes analíticos y la no devolución de cualquier importe pagado, reservándose La Consultora el derecho de ejercitar las acciones legales pertinentes por los daños y perjuicios ocasionados a su patrimonio o reputación.</p>
+
+                <!-- Apartado 3 -->
+                <h2 id="apartado-3" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 3</span> NATURALEZA DEL PROCESAMIENTO TECNOLÓGICO Y ANÁLISIS DE DATOS EN SITIO</h2>
+                <p style="color: #475569;">Este apartado regula y fundamenta el consentimiento técnico y operativo que el Usuario otorga a Montecristo AInsights para la captura, procesamiento algorítmico, transcripción semántica y modelado predictivo de la información generada a través de las herramientas tecnológicas distribuidas en el entorno de la Consultoría Monitorizada. Las partes reconocen que la instrumentación digital es un elemento indispensable para la validez y entrega de los diagnósticos organizacionales objeto del servicio.</p>
+
+                <h3 style="color: #1b2f38;">3.1. Consentimiento Explícito para la Captura Acústica e Indexación por Diarización</h3>
+                <p style="color: #475569;">El Usuario otorga su consentimiento expreso, irrevocable y plenamente informado a La Consultora para que, durante el desarrollo de las sesiones presenciales o virtuales, sus intervenciones orales sean captadas mediante la infraestructura de microfonía local, sensores acústicos satelitales o canales de mensajería instantánea dispuestos en las mesas de trabajo:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Mecánica de la Diarización Forense de Voz:</strong> El Usuario acepta que los sistemas de cómputo y software de La Consultora procesen los flujos de audio con el único fin de ejecutar algoritmos de separación y atribución fáctica de hablantes (Diarización de Voz). Esta tecnología aísla la señal acústica de cada participante, identificando los patrones de frecuencia sonora para vincular de forma automática las palabras habladas con el perfil de identidad verificado del titular, migrando el registro analítico del estado "Hablante_No_Identificado" a la identidad real corporativa en las bases de datos de control.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Garantía de Privacidad y No Almacenamiento Permanente de Audio:</strong> En estricto apego a las directrices de seguridad de datos, el procesamiento de las ondas de voz se realiza a nivel local y automatizado a través del backend de los sistemas de La Consultora. El sistema actúa de forma neutra y no realiza grabaciones permanentes ni almacenamiento de las conversaciones informales o de carácter estrictamente privado de los asistentes que ocurran fuera de las dinámicas de diagnóstico explícitas, destruyendo los archivos de audio crudo una vez procesada su transcripción analítica textual.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">3.2. Procesamiento de Metadatos No Verbales y Análisis Conductual</h3>
+                <p style="color: #475569;">El software analítico de La Consultora extrae métricas estadísticas del comportamiento interactivo de los participantes para robustecer el diagnóstico organizativo. El Usuario autoriza expresamente el procesamiento de las siguientes variables de interacción:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Share of Voice (Cuota de Habla Gropual):</strong> Cálculo del porcentaje de participación y uso del tiempo que el Usuario ejerce dentro del total de la sesión en su mesa de trabajo, midiendo el balance conversacional y la dinámica de protagonismo o retraimiento en los ejercicios colectivos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Indicadores Acústicos Complementarios:</strong> Medición automatizada de las variaciones de volumen, pausas prolongadas, latencia de respuesta frente a dilemas de gestión e interrupciones válidas. Estas variables se tratan única y exclusivamente como metadatos numéricos orientados a evaluar los estilos de toma de decisiones corporativas, la seguridad en la argumentación técnica y el nivel de liderazgo situacional del participante.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">3.3. Transcripción Semántica y Minería de Datos de Fricción Operativa</h3>
+                <p style="color: #475569;">Toda la información oral volcada en las dinámicas monitorizadas es convertida a texto e indexada bajo estrictos criterios metodológicos. El Usuario acepta que el procesamiento semántico abarque:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Análisis de la Causa Raíz (Minería del Diagnóstico):</strong> La Consultora procesa las transcripciones de texto derivadas de las exposiciones de problemas de los Usuarios para estructurar las variables organizacionales, separando los síntomas superficiales de las causas raíz de los cuellos de botella organizacionales que impactan la productividad y rentabilidad empresarial.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Clasificación de Activos Corporativos Declarados:</strong> Las capacidades técnicas, recursos e infraestructura que el Usuario manifieste poseer o requerir durante los ejercicios dirigidos serán indexados y catalogados semánticamente por la inteligencia de La Consultora bajo las tres categorías metodológicas institucionales: Inteligencia (conocimiento y know-how), Influencia (capital relacional y gremial) e Intervención (recursos físicos, técnicos e infraestructura operativa).</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">3.4. El Motor de Coincidencia y Generación de Clústeres de Afinidad</h3>
+                <p style="color: #475569;">El Usuario reconoce que el principal valor agregado de la Consultoría Monitorizada radica en la capacidad algorítmica de ordenar la data cruzada de múltiples organizaciones para mitigar riesgos comerciales y potenciar interacciones de alta eficiencia:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Agrupamientos Estructurados de Sinergia:</strong> Los vectores de datos obtenidos antes y durante el servicio son sometidos a modelos matemáticos de optimización y agrupamiento (clustering). El sistema distribuye a los participantes en celdas de trabajo numéricamente equilibradas (fijando esquemas óptimos de 6 personas por mesa), con el objetivo de maximizar el aprovechamiento de la sesión y asegurar un entorno de debate diverso y simétrico.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Filtros Anticompetencia y Simetría Corporativa:</strong> El procesamiento en el backend aplica de forma automática matrices de exclusión para evitar que competidores directos compartan las mismas celdas de análisis, resguardando la comodidad de los participantes y asegurando la simetría en cuanto a capacidad operativa, alcance territorial, momento vital del negocio y nivel de adopción tecnológica e innovación organizacional.</li>
+                </ul>
+
+                <!-- Apartado 4 -->
+                <h2 id="apartado-4" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 4</span> PROPIEDAD INTELECTUAL, SECRETOS INDUSTRIALES Y LICENCIAS LIMITADAS</h2>
+                <p style="color: #475569;">Este apartado regula de forma exhaustiva los derechos de propiedad industrial, derechos de autor, secretos comerciales y la titularidad del patrimonio informativo derivado del diseño metodológico, la infraestructura tecnológica y el procesamiento analítico ejecutado por La Consultora. Las partes reconocen que los esquemas de diagnóstico y el know-how aplicados constituyen activos intangibles críticos propiedad exclusiva de Montecristo AInsights.</p>
+
+                <h3 style="color: #1b2f38;">4.1. Titularidad Absoluta sobre el Método y la Infraestructura Tecnológica</h3>
+                <p style="color: #475569;">El Usuario reconoce y acepta de manera expresa que Montecristo AInsights es la única y legítima propietaria y/o licenciataria autorizada de todos los derechos de propiedad intelectual e industrial relacionados con los servicios de Consultoría Monitorizada. Esta titularidad incluye, de manera enunciativa mas no limitativa:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Arquitectura Metodológica:</strong> El diseño conceptual de los talleres de alineación, la estructura cronométrica bifásica de las sesiones, los blueprints de interacción en sala, las dinámicas guiadas de diagnóstico organizativo y las secuencias lógicas de los ejercicios grupales.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Herramientas de Clasificación y Diagnóstico:</strong> Las taxonomías técnicas utilizadas para segmentar activos organizacionales (incluyendo las matrices de clasificación bajo los vectores de Inteligencia, Influencia e Intervención), así como las metodologías para la identificación y desglose de causas raíz en los cuellos de botella empresariales.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Infraestructura Digital y Algorítmica:</strong> Los sistemas informáticos de soporte, interfaces de visualización gráfica en sala (CAST), algoritmos de emparejamiento predictivo, modelos de agrupamiento en celdas de trabajo y los sistemas automatizados de transcripción semántica y diarización acústica.</li>
+                </ul>
+                <p style="color: #475569;">El perfeccionamiento de este contrato o la participación en los eventos de Consultoría Monitorizada no transfiere, en ningún caso, derecho alguno de propiedad, coautoría o explotación comercial sobre dichos activos a favor del Usuario o de su Organización.</p>
+
+                <h3 style="color: #1b2f38;">4.2. Propiedad Intelectual de la Data Estructurada y lo Producido por La Consultora</h3>
+                <p style="color: #475569;">Toda la información cruda recopilada a lo largo del proceso es sometida a un proceso de transformación intelectual mediante el uso de la infraestructura técnica de La Consultora. Por lo tanto, las partes acuerdan las siguientes reglas de propiedad sobre los outputs del servicio:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Titularidad de los Entregables Analíticos:</strong> Las matrices de soluciones personalizadas, los reportes analíticos de coincidencia, los micro-perfiles conductuales de estilo de liderazgo (arquetipos de desempeño), los tableros estadísticos de interacción y las hojas de ruta de liquidez comercial generadas con posterioridad a las dinámicas constituyen propiedad intelectual exclusiva de Montecristo AInsights.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Licencia Limitada de Uso Interno:</strong> La Consultora otorga al Usuario una licencia de uso personal, no exclusiva, no transferible, de alcance global y estrictamente revocable sobre sus reportes analíticos individuales. Esta licencia faculta al Usuario únicamente a utilizar la información contenida en los entregables para el análisis interno, la optimización operativa y el desarrollo estratégico de su propia organización.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Prohibición de Explotación Comercial Secundaria:</strong> Queda estrictamente prohibido para el Usuario, sus empleados, filiales o representantes, vender, sublicenciar, distribuir, publicar, arrendar, reproducir de forma masiva o incorporar en herramientas de consultoría de terceros los entregables y metodologías producidos por La Consultora.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">4.3. Blindaje de Secretos Industriales y Restricciones Técnicas</h3>
+                <p style="color: #475569;">Los procesos, fórmulas algorítmicas, criterios de emparejamiento y flujos de análisis de interacciones de La Consultora tienen el carácter de Secreto Industrial de conformidad con la Ley Federal de Protección a la Propiedad Industrial vigente en la República Mexicana. En consecuencia, el Usuario se obliga a:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Prohibición de Ingeniería Inversa:</strong> Abstenerse de realizar, intentar o facilitar a terceros cualquier proceso de ingeniería inversa, descompilación, desmontaje, imitación o copia de los sistemas de visualización, hardware de captura acústica, flujos de software o blueprints metodológicos utilizados en las sesiones de Consultoría Monitorizada.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Restricción de Grabación y Extracción Externa:</strong> Queda prohibido introducir dispositivos de grabación de audio o video ajenos a la infraestructura de La Consultora con el propósito de registrar los flujos metodológicos de la sesión. El Usuario no podrá extraer código, interfaces o bases de datos de los entornos virtuales de La Consultora.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">4.4. Autorización Mutua y Co-Uso de Signos Distintivos (Licencia de Marca)</h3>
+                <p style="color: #475569;">A fin de habilitar la personalización de las interfaces, mapas de la sala y reportes interactivos, las partes establecen un acuerdo de co-uso de marcas limitado exclusivamente a la ejecución del servicio:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Licencia de Uso de Marca a Favor de La Consultora:</strong> El Usuario y la Organización que representa otorgan a Montecristo AInsights una autorización no exclusiva, temporal, gratuita y revocable para utilizar sus logotipos, nombres comerciales y marcas registradas de forma exclusiva dentro del material visual, pantallas de proyección en sitio e interfaces de los reportes analíticos de la sesión.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Uso en Casos de Éxito:</strong> La Consultora podrá hacer mención de la participación de la Organización en sus portafolios de servicios y relaciones institucionales, comprometiéndose a no divulgar en ningún momento datos financieros sensibles, secretos comerciales del Usuario o métricas críticas de facturación interna sin una autorización previa y por escrito.</li>
+                </ul>
+
+                <!-- Apartado 5 -->
+                <h2 id="apartado-5" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 5</span> TÉRMINOS ECONÓMICOS, TARIFAS, FACTURACIÓN Y POLÍTICAS DE CANCELACIÓN</h2>
+                <p style="color: #475569;">Este apartado rige la estructura financiera, los esquemas de contraprestación, los flujos de facturación y las penalizaciones por inasistencia o baja extemporánea aplicables a los servicios de Consultoría Monitorizada. Las partes reconocen que la naturaleza del servicio exige la reserva anticipada de infraestructura tecnológica, licenciamiento en backend de sistemas y la disposición de recintos físicos, por lo que los compromisos económicos son estrictos e improrrogables.</p>
+
+                <h3 style="color: #1b2f38;">5.1. Estructura de Contraprestación y Tarifas</h3>
+                <p style="color: #475569;">El Usuario se obliga a cubrir a favor de Montecristo AInsights las tarifas comerciales vigentes para el acceso y participación en las sesiones de Consultoría Monitorizada, las cuales se fijarán de conformidad con las siguientes estipulaciones:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Determinación de Precios:</strong> Las tarifas comerciales aplicables a cada sesión, ciclo o programa de consultoría serán las especificadas en las respectivas órdenes de servicio, convocatorias institucionales o cotizaciones formales emitidas por el área comercial de La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Moneda de Pago:</strong> A menos que se especifique formalmente lo contrario por escrito, todos los montos y tarifas se cotizan y deberán ser liquidados en Pesos Mexicanos (MXN).</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Exclusión de Gastos Satélite:</strong> Salvo acuerdo expreso en contrario, las tarifas cubren única y exclusivamente el derecho de acceso al ecosistema de consultoría, el procesamiento tecnológico en sitio y la entrega de los reportes analíticos producidos. No incluyen viáticos, hospedaje, traslados, dispositivos de hardware propiedad del Usuario ni consumos adicionales no especificados en el programa.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">5.2. Métodos de Pago y Flujo de Facturación</h3>
+                <p style="color: #475569;">Para garantizar la validez del registro técnico y el correcto procesamiento de la data previa, el Usuario deberá sujetarse a los siguientes lineamientos de pago y fiscalización:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Medios de Pago Autorizados:</strong> La Consultora recibirá los importes correspondientes a través de transferencia electrónica de fondos (SPEI), depósitos bancarios directos a las cuentas institucionales de La Consultora o mediante las pasarelas de pago digital integradas en sus interfaces oficiales.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Oportunidad del Pago:</strong> La totalidad de la contraprestación deberá encontrarse liquidada antes de la fecha límite establecida en la orden de servicio. La falta de pago oportuno facultará a La Consultora a dar de baja automática el perfil del Usuario en los sistemas de asignación de mesas, sin necesidad de declaración judicial y sin responsabilidad alguna para la firma.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Emisión de Comprobantes Fiscales (Facturación):</strong> La Consultora emitirá el Comprobante Fiscal Digital por Internet (CFDI) correspondiente por los servicios contratados, en estricto cumplimiento con las disposiciones del Código Fiscal de la Federación (CFF) mexicano. El Usuario se obliga a proporcionar su Constancia de Situación Fiscal actualizada y especificar el Uso del CFDI al momento de su registro. Las solicitudes de facturación extemporáneas o fuera del mes calendario en el que se efectuó el pago no serán procedentes.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">5.3. Políticas de Cancelación, Inasistencia y No-Reembolso</h3>
+                <p style="color: #475569;">Debido a que el modelo de optimización matemática de La Consultora calcula la distribución de celdas y la compatibilidad en base a métricas de participantes exactos (configurando clústeres rígidos de 6 personas por mesa), la cancelación o inasistencia de un Vector genera un impacto técnico adverso en la dinámica conversacional. Por ello, se establecen las siguientes penalizaciones:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Principio General de No-Reembolso:</strong> Una vez cubierto el importe del servicio y perfeccionado el contrato, Montecristo AInsights no efectuará reembolsos en efectivo ni devoluciones de capital a favor del Usuario bajo ningún supuesto de cancelación unilateral por parte de este.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Plazos de Notificación y Créditos Corporativos:</strong> Si el Usuario se ve en la imposibilidad de asistir a la sesión monitorizada, podrá notificarlo formalmente por escrito al correo <a href="mailto:team@montecristoainsights.com" class="text-[#e59903] hover:underline font-semibold">team@montecristoainsights.com</a> bajo las siguientes reglas:
+                        <ul class="mt-2 border-l border-[#e59903]/50 pl-4 ml-2">
+                            <li class="!mb-1" style="color: #475569;"><strong style="color: #16262e;">Notificación con más de 10 días hábiles de anticipación:</strong> El Usuario perderá el derecho a reembolso, pero La Consultora le otorgará un crédito digital equivalente al 100% del valor pagado, transferible para ser utilizado en futuras sesiones de consultoría monitorizada dentro de un plazo máximo de 12 meses calendario.</li>
+                            <li class="!mb-1" style="color: #475569;"><strong style="color: #16262e;">Notificación entre 5 y 10 días hábiles de anticipación:</strong> El Usuario recibirá un crédito corporativo equivalente únicamente al 50% del valor pagado, aplicándose el 50% restante como penalización por concepto de gastos administrativos y recalibración de software.</li>
+                            <li class="!mb-1" style="color: #475569;"><strong style="color: #16262e;">Notificación con menos de 5 días hábiles de anticipación o Inasistencia Absoluta ("No Show"):</strong> El Usuario perderá la totalidad del importe pagado. No se emitirá crédito corporativo alguno, aplicándose el 100% del fondo como pena convencional líquida por afectación al diseño de las celdas de simetría conversacional en sitio.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">5.4. Sustitución de Participantes</h3>
+                <p style="color: #475569;">Con el objetivo de salvaguardar la inversión económica de la Organización, La Consultora permitirá la sustitución del participante físico registrado bajo las siguientes condiciones obligatorias:</p>
+                <ul>
+                    <li style="color: #475569;">El Usuario o la Organización deberá solicitar la sustitución con una anticipación mínima de 3 días hábiles anteriores a la fecha del evento.</li>
+                    <li style="color: #475569;">El nuevo participante propuesto deberá pertenecer a la misma organización o grupo corporativo y ocupar un cargo o rol directivo similar al del titular original.</li>
+                    <li style="color: #475569;">El nuevo participante deberá completar obligatoriamente la totalidad de la fase de ingesta previa y registro digital automatizado antes de la sesión. De lo contrario, los sistemas de procesamiento de datos no podrán validar sus vectores de entrada y se negará su acceso en el recinto, aplicando la penalización por inasistencia descrita en la cláusula 5.3.</li>
+                </ul>
+
+                <!-- Apartado 6 -->
+                <h2 id="apartado-6" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 6</span> ACUERDO DE CONFIDENCIALIDAD CRUZADA Y RECIPROCIDAD COMERCIAL</h2>
+                <p style="color: #475569;">Este apartado establece el marco de gobernanza, reserva de información y ética corporativa que rige las interacciones entre todos los actores que participan en el ecosistema de la Consultoría Monitorizada. Al reunir en un mismo Nodo de análisis a múltiples directivos, fundadores y organizaciones, Montecristo AInsights instrumenta una estructura jurídica de protección mutua y obligatoria para salvaguardar el patrimonio informativo expuesto en las mesas de trabajo.</p>
+
+                <h3 style="color: #1b2f38;">6.1. Naturaleza Colectiva y Vinculación Bilateral Obligatoria</h3>
+                <p style="color: #475569;">El Usuario reconoce que la Consultoría Monitorizada es un entorno de co-creación y diagnóstico donde se vierten datos operativos, cuellos de botella y activos de negocio estratégicos. Por tanto, las obligaciones de confidencialidad contenidas en este apartado vinculan jurídicamente a:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. La Consultora frente al Usuario:</strong> Obligándola a tratar con absoluta reserva la data recabada en los tres momentos logísticos y los reportes finales producidos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. El Usuario frente a La Consultora:</strong> Prohibiéndole la extracción o réplica de la metodología y la infraestructura de software.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. El Usuario frente a los demás Participantes:</strong> Obligándolo a resguardar bajo el más estricto secreto profesional toda la información, problemáticas, estrategias o datos sensibles que escuche, visualice o reciba de los otros empresarios dentro de sus celdas de análisis o en los tableros generales de interacción.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">6.2. Delimitación de la "Información Confidencial"</h3>
+                <p style="color: #475569;">Para los efectos del presente contrato, tendrá el carácter de Información Confidencial toda aquella información técnica, financiera, comercial, estratégica, operativa o legal que sea revelada antes, durante o a través de las sesiones de consultoría monitorizada, ya sea de forma oral, escrita, documental o mediante las interfaces digitales del sistema. Esta clasificación incluye de manera enunciativa mas no limitativa:</p>
+                <ul>
+                    <li style="color: #475569;">Los diagnósticos de fallas internas, cuellos de botella organizacionales y causas raíz declarados por cualquier empresa.</li>
+                    <li style="color: #475569;">Métricas de facturación, estructuras de costos, márgenes de utilidad, carteras de clientes, debilidades logísticas o planes de expansión territorial expuestos en las dinámicas.</li>
+                    <li style="color: #475569;">Los contenidos de los brochures, presentaciones de marca corporativa, catálogos restringidos o manuales de procesos aportados por las organizaciones.</li>
+                    <li style="color: #475569;">Los reportes de afinidad, puntuaciones de coincidencia (Match Scores) y entregables producidos por el procesamiento informático de La Consultora.</li>
+                </ul>
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">Excepciones Legales a la Confidencialidad</p>
+                <p style="color: #475569;">No se considerará Información Confidencial aquella que:</p>
+                <ul>
+                    <li style="color: #475569;">Sea de dominio público al momento de su revelación o pase a ser de dominio público sin que medie un acto ilícito o incumplimiento de este contrato por parte del Usuario receptor.</li>
+                    <li style="color: #475569;">Haya sido del conocimiento previo del Usuario receptor antes de iniciar las sesiones, siempre y cuando cuente con evidencia documental que lo acredite de forma fehaciente.</li>
+                    <li style="color: #475569;">Sea obtenida legalmente de un tercero que no se encuentre sujeto a una obligación de confidencialidad directa o indirecta.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">6.3. Obligaciones de No-Divulgación y Restricciones de Uso</h3>
+                <p style="color: #475569;">Los Usuarios que participen en las sesiones de Consultoría Monitorizada se obligan formalmente a cumplir con los siguientes mandatos de protección de información:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Uso Restringido:</strong> Utilizar la Información Confidencial de los demás participantes única y exclusivamente para los fines de debate, análisis de afinidad y evaluación de sinergias comerciales permitidos dentro del desarrollo del evento programado.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Prohibición de Explotación no Autorizada:</strong> Abstenerse de utilizar la información de los problemas internos o capacidades de otra organización para obtener una ventaja comercial desleal, ejecutar prácticas predatorias de mercado o contactar de forma invasiva a sus clientes o proveedores sin la debida liberación del protocolo de permisos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Resguardo y Custodia:</strong> Mantener la Información Confidencial bajo estrictas medidas de seguridad, evitando que empleados, socios o terceros ajenos a la sesión tengan acceso a las anotaciones, minutas o datos visualizados en las celdas de trabajo.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">D. Vigencia de la Reserva:</strong> Las obligaciones de confidencialidad y no divulgación pactadas en este apartado permanecerán vigentes y serán plenamente exigibles por un periodo de 5 años contados a partir de la fecha de conclusión de la sesión de consultoría monitorizada correspondiente.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">6.4. Principio de Reciprocidad Comercial y Buenas Prácticas</h3>
+                <p style="color: #475569;">El ecosistema de consultoría opera bajo un postulado de mutuo beneficio institucional, por lo que el Usuario acepta someterse a las siguientes pautas de reciprocidad:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Interacción por Mérito y Valor:</strong> El Usuario se compromete a entablar diálogos comerciales basados en la aportación real de soluciones bajo los tres vectores de activos establecidos (Inteligencia, Influencia e Intervention), prohibiéndose conductas puramente extractivas de datos que no ofrezcan valor de retorno al foro.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Respeto al Protocolo de Permisos:</strong> Queda prohibida la recolección manual de datos de contacto o la realización de propuestas comerciales agresivas fuera del flujo autorizado por el sistema transaccional. El intercambio de información privada de comunicación directa queda estrictamente supeditado a la validación de doble consentimiento expreso descrita en el aviso de privacidad de La Consultora.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">6.5. Penalizaciones y Consecuencias por Incumplimiento o Fuga de Información</h3>
+                <p style="color: #475569;">El incumplimiento de cualquiera de las obligaciones de confidencialidad contenidas en este apartado por parte del Usuario facultará a Montecristo AInsights y/o a los participantes afectados a ejercitar de manera inmediata las siguientes acciones legales y comerciales:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Baja y Veto Definitivo:</strong> La rescisión inmediata del contrato de servicios, la cancelación definitiva del perfil del Usuario en los sistemas analíticos y el veto permanente para participar en futuros eventos o programas organizados por La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Pena Convencional y Daños Fácticos:</strong> El Usuario infractor se obliga a indemnizar a la parte afectada por los daños y perjuicios comprobables que su divulgación no autorizada ocasione. Las partes reconocen que la violación a los secretos comerciales o la sustracción ilícita de información estratégica faculta a los afectados a proceder ante los tribunales civiles, mercantiles o penales correspondientes de conformidad con la Ley Federal de Protección a la Propiedad Industrial y el Código Penal Federal aplicable en la República Mexicana.</li>
+                </ul>
+
+                <!-- Apartado 7 -->
+                <h2 id="apartado-7" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 7</span> EXCLUSIONES DE RESPONSABILIDAD Y GARANTÍAS LIMITADAS</h2>
+                <p style="color: #475569;">Este apartado delimita formalmente los alcances de la responsabilidad jurídica y civil de Montecristo AInsights, fijando las fronteras entre el procesamiento analítico provisto por La Consultora y la toma de decisiones empresariales independiente y soberana que recae de forma exclusiva sobre el Usuario y su Organización. Las partes aceptan que el valor del servicio radica en la entrega de diagnósticos metodológicos y modelos de afinidad basados en datos contextuales, por lo que no se configuran promesas de resultados financieros o comerciales garantizados.</p>
+
+                <h3 style="color: #1b2f38;">7.1. Exclusión General de Resultados Comerciales y Financieros</h3>
+                <p style="color: #475569;">El Usuario reconoce y acepta de manera expresa que los entregables, matrices de soluciones, hojas de ruta estratégicas, reportes analíticos y clústeres de afinidad producidos por La Consultora constituyen herramientas de orientación y diagnóstico basadas en el procesamiento estructurado de información. En consecuencia:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. No Garantía de Retorno de Inversión (ROI):</strong> La Consultora no garantiza, ni de forma explícita ni implícita, la obtención de incrementos en la facturación, reducciones específicas de costos, captación de inversiones, firmas de contratos definitivos o cualquier otro resultado económico cuantitativo o cualitativo como consecuencia directa de la participación del Usuario en las sesiones de Consultoría Monitorizada.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Autonomía en la Toma de Decisiones:</strong> El Usuario y la Organización que representa son los únicos y absolutos responsables de la implementación, ejecución o desestimación de las hojas de ruta y recomendaciones analíticas provistas en los reportes. La Consultora no asume responsabilidad alguna por el éxito, estancamiento o menoscabo comercial que sufra el Usuario al aplicar las directrices del diagnóstico en su modelo de negocio real.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Riesgo del Mercado Operativo:</strong> Los análisis predictivos de emparejamiento evalúan la afinidad de capacidades operativas y visiones directivas bajo los tres vectores metodológicos (Inteligencia, Influencia e Intervención), pero no pueden prever variables macroeconómicas, cambios regulatorios, fluctuaciones cambiarias o conductas de mala fe de terceros en el mercado, por lo que el riesgo comercial derivado de cualquier alianza recae exclusivamente en los firmantes de la misma.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">7.2. Ausencia de Responsabilidad por la Ingesta de Datos e Interacciones de Terceros</h3>
+                <p style="color: #475569;">La exactitud de los diagnósticos emitidos por La Consultora se encuentra intrínsecamente ligada a la pureza y veracidad de la información vertida en el sistema por el foro de participantes. Por lo tanto:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Exoneración por Datos Falsos o Sesgados:</strong> La Consultora se encuentra plenamente liberada de cualquier responsabilidad civil, mercantil o penal ante errores de perfilado, falsos positivos de match o fallas de diagnóstico analítico que traigan su origen directo de datos inexactos, declaraciones falsas, brochures desactualizados o información sesgada suministrada por el Usuario o por los demás participantes del Nodo.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Conductas Independientes de los Asistentes:</strong> La Consultora actúa únicamente como un facilitador metodológico neutral y un operador tecnológico de la sesión. No asume responsabilidad alguna por las declaraciones orales, ofertas comerciales informales, acuerdos verbales Extextuales o comportamientos que los participantes realicen de forma independiente dentro o fuera de las celdas de trabajo monitorizadas, siendo cada directivo responsable directo de sus actos frente a los demás miembros.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">7.3. Garantías Limitadas sobre la Infraestructura Tecnológica e Interfaces</h3>
+                <p style="color: #475569;">Montecristo AInsights se compromete a desplegar sus mejores esfuerzos técnicos y administrativos para asegurar la continuidad y correcto funcionamiento de sus plataformas digitales, hardware de captura acústica y sistemas de procesamiento en sitio. Sin embargo, los servicios tecnológicos se otorgan bajo la condición jurídica de "como están" (as is) y "según disponibilidad", bajo las siguientes limitantes:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Tolerancia a Fallas en Entornos Híbridos:</strong> El Usuario acepta que los flujos automatizados de mensajería instantánea, las interfaces de software y los procesos de transcripción por IA en tiempo real pueden experimentar interrupciones temporales, retrasos en el backend o degradación de confianza algorítmica debido a fallas en la conectividad a internet de los recintos, actualizaciones de sistemas de terceros o saturación de redes móviles. Dichas incidencias se consideran eventos técnicos tolerables y no constituirán un incumplimiento contractual por parte de La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Exclusión de Daños Informáticos Satélite:</strong> La Consultora no será responsable por la pérdida de datos, incompatibilidades de software, bloqueos temporales de cuentas de mensajería del Usuario o fallas de rendimiento en los dispositivos móviles particulares de los asistentes que ocurran durante o a través de la interacción con los bots e interfaces del sistema de registro.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">7.4. Límite Máximo de Responsabilidad Económica (Cláusula de Tope de Responsabilidad)</h3>
+                <p style="color: #475569;">Para el caso hipotético de que una autoridad judicial o tribunal competente determine mediante sentencia firme y definitiva la existencia de una responsabilidad civil, mercantil o contractual imputable de forma directa a Montecristo AInsights por fallas graves o negligencia comprobable en la prestación del servicio de Consultoría Monitorizada, las partes acuerdan fijar un tope económico punitivo:</p>
+                <div class="mt-4 mb-8 p-4 bg-slate-50 border-l-4 border-[#16262e] rounded-r-md shadow-sm">
+                    <p class="!mb-0" style="color: #16262e;"><strong style="color: #16262e;">⚖️ Tope Indemnizatorio Máximo:</strong> La responsabilidad económica acumulada total de La Consultora por cualquier concepto de daños, perjuicios, multas o reclamaciones relacionadas con este contrato estará estrictamente limitada, en todos los casos, a un monto máximo equivalente al 100% de la cantidad efectivamente pagada y liquidada por el Usuario a favor de La Consultora por concepto de la tarifa de acceso a la sesión específica en la que se originó el reclamo fáctico.</p>
+                </div>
+                <p style="color: #475569;">Las partes aceptan que esta limitación es proporcional, equitativa y refleja de forma fiel la distribución del balance de riesgo operativo transferido entre La Consultora y el Usuario.</p>
+
+                <h3 style="color: #1b2f38;">7.5. Caso Fortuito y Fuerza Mayor</h3>
+                <p style="color: #475569;">Ninguna de las partes será responsable ante la otra por el retraso, suspensión o incumplimiento total de las obligaciones contraídas en estos Términos y Condiciones si dicho evento deriva directa o indirectamente de causas de Caso Fortuito o Fuerza Mayor, entendidos estos como aquellos hechos futuros, imprevisibles e inevitables ajenos al control de las organizaciones.</p>
+                <p style="color: #475569;">Esta cláusula cubre expresamente: desastres naturales, incendios, terremotos, inundaciones, fallas generales en la red eléctrica nacional o backbone de telecomunicaciones, huelgas generales, cierres patronales, actos de terrorismo, sabotajes cibernéticos masivos (malware o ataques DDoS generalizados), emergencias sanitarias declaradas oficialmente por las autoridades gubernamentales mexicanas o restricciones legales sobre la operación presencial de recintos corporativos. Declarado el evento de Fuerza Mayor, los plazos de cumplimiento se prorrogarán por el tiempo que dure la contingencia, u operarán bajo los términos de las reprogramaciones fijadas en el Apartado 5.</p>
+
+                <!-- Apartado 8 -->
+                <h2 id="apartado-8" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 8</span> LIMITACIÓN DE RESPONSABILIDAD TÉCNICA, INFRAESTRUCTURA DE RED Y FUERZA MAYOR</h2>
+                <p style="color: #475569;">Este apartado regula las fronteras de responsabilidad tecnológica y operativa de La Consultora frente a contingencias técnicas, fallas de conectividad, degradación de infraestructura crítica e imprevistos derivados de la interacción de sistemas híbridos. Las partes reconocen que la ejecución de la Consultoría Monitorizada depende de un ecosistema digital integrado por infraestructura en la nube, APIs de terceros, redes de telecomunicaciones locales y hardware periférico expuesto a variables ambientales, por lo que se delimita el alcance del riesgo tecnológico transferido.</p>
+
+                <h3 style="color: #1b2f38;">8.1. Exclusión de Responsabilidad por Conectividad y Redes de Terceros</h3>
+                <p style="color: #475569;">El Usuario acepta y reconoce que la Consultoría Monitorizada requiere el flujo e intercambio continuo de datos e información semántica entre las terminales de los asistentes en sala, los bots de mensajería digital y los servidores centrales en la nube de Montecristo AInsights. En consecuencia, La Consultora queda plenamente exonerada de cualquier tipo de responsabilidad civil o contractual por retrasos, pérdidas de información, errores de procesamiento o fallas de sincronización generados por:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Deficiencias en el Ancho de Banda del Recinto:</strong> Fallas, intermitencias o suspensiones absolutas del servicio de internet (enlaces dedicados, redes Wi-Fi o cableado físico) provisto por las entidades terceras que funjan como Sedes de la consultoría corporativa.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Saturación e Interrupciones en Redes Celulares y Móviles:</strong> La degradación del espectro radioeléctrico o la pérdida de cobertura de las compañías operadoras de telecomunicaciones locales que impida a los participantes enviar o recibir las notificaciones, alertas de emparejamiento o formularios digitales requeridos durante las dinámicas.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Caídas Globales de Plataformas y APIs Subcontratadas:</strong> Interrupciones masivas en los servicios de mensajería instantánea de terceros (WhatsApp), caídas en los servidores de bases de datos (Firebase, AWS) o fallas operativas en las pasarelas de pago y motores de diarización y síntesis semántica de los proveedores en la nube. Dichos incidentes se consideran eventos tecnológicos fuera del control razonable de La Consultora.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8.2. Tolerancia a Fallas en el Procesamiento Acústico Local y Red de Seguridad</h3>
+                <p style="color: #475569;">Debido a que la captura acústica y posterior separación automatizada de las voces en las celdas de trabajo requiere condiciones ambientales óptimas para el correcto funcionamiento del software de La Consultora, se establecen las siguientes limitantes:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Degradación por Ruido Ambiental Extremo:</strong> La Consultora no será responsable si el sistema presenta fallas en el nombrado de perfiles en pantalla o errores en el análisis de estilo de liderazgo si estos son provocados por ruido rosa, eco acústico estructural del recinto, conversaciones simultáneas desordenadas que violen los cronómetros, o interferencias sonoras externas que superen los umbrales normales de tolerancia de la microfonía satelital.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Activación del Filtro de Seguridad (Safety Net):</strong> El Usuario reconoce que los sistemas cuentan con filtros automáticos de control de calidad. Si el índice de confianza algorítmica para la diarización de una celda decae por debajo del 80% debido a factores físicos del entorno, el sistema ejecutará de forma preventiva su Red de Seguridad (Safety Net), procediendo a omitir o suspender el análisis conductual o la transcripción de dicha sesión específica para resguardar la pureza de la base de datos general. Esta supresión automatizada de metadatos no constituirá bajo ninguna circunstancia un defecto en la prestación del servicio ni dará derecho a reclamaciones económicas por parte del Usuario.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8.3. Pérdida de Datos Informáticos Satélite y Compatibilidad de Hardware</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Incompatibilidad de Dispositivos Particulares:</strong> Es responsabilidad exclusiva del Usuario contar con un dispositivo móvil inteligente (Smartphone) con sistema operativo actualizado y capacidad de red estable para interactuar con las interfaces digitales del servicio. La Consultora no garantiza la compatibilidad absoluta del software con terminales móviles descatalogadas, con modificaciones en su sistema operativo original (Jailbreak o Rooting), o que tengan restricciones internas de seguridad corporativa instaladas por el propio Usuario.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Exclusiones de Daños al Software del Usuario:</strong> La Consultora no asume responsabilidad alguna ante bloqueos temporales o suspensiones de cuentas de mensajería del Usuario que pudieran ser decretadas de forma unilateral por las plataformas matrices de dichos canales debido a un mal uso del bot de registro por parte del asistente, ni por la alteración o pérdida de datos locales en el dispositivo derivados del acceso a los enlaces analíticos compartidos.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8.4. Exclusión Absoluta de Responsabilidad por Caso Fortuito o Fuerza Mayor</h3>
+                <p style="color: #475569;">Ninguna de las partes será responsable ante la otra por el incumplimiento, retraso o suspensión en la ejecución de las obligaciones contraídas bajo estos Términos y Condiciones si dicho evento deriva de un Caso Fortuito o Fuerza Mayor. De conformidad con la legislación aplicable en la República Mexicana, se entenderá por tal todo acontecimiento futuro, imprevisible, inevitable y ajeno al control operativo de las organizaciones.</p>
+                <p style="color: #475569;">Esta cláusula exime a Montecristo AInsights ante contingencias que afecten la infraestructura en sitio o remota, incluyendo explícitamente:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Eventos Climáticos y Catástrofes Naturales:</strong> Terremotos, incendios, inundaciones, tormentas eléctricas masivas que afecten los centros de datos, huracanes u otros desastres que inhabiliten el acceso físico a las sedes o colapsen las redes eléctricas de la región.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Fallas de Infraestructura General y Suministros:</strong> Cortes generales de energía eléctrica nacional de mediano o largo plazo, apagones cibernéticos masivos (ransomware de infraestructura crítica), fallas críticas en los cables de telecomunicaciones submarinos o en el backbone central de internet.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Actos de Autoridad y Restricciones Legales:</strong> Declaratorias oficiales de emergencias sanitarias, toques de queda, cierres perimetrales forzados dictados por autoridades municipales, estatales o federales, expropiaciones temporales, estados de excepción o bloqueos en vías de comunicación que impidan el traslado del personal técnico de piso de La Consultora o de los participantes a los recintos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Conflictos Sociales y Terrorismo:</strong> Huelgas generales, disturbios civiles violentos, atentados, sabotajes dirigidos contra la infraestructura digital o física de La Consultora o de sus proveedores logísticos esenciales.</li>
+                </ul>
+                <p style="color: #475569;">Ocurrido un evento de Caso Fortuito o Fuerza Mayor, las obligaciones operativas del contrato se suspenderán por todo el tiempo que dure la contingencia. Si las condiciones de Fuerza Mayor persisten por más de 30 días naturales continuos, cualquiera de las partes podrá dar por terminado el servicio específico sin que medie responsabilidad de indemnización por daños o perjuicios, procediendo La Consultora a emitir un crédito digital corporativo a favor del Usuario equivalente al monto de la tarifa pagada para su uso posterior una vez normalizada la contingencia, de conformidad con las reglas financieras establecidas en el Apartado 5.</p>
+
+                <!-- Apartado 8 Bis -->
+                <h2 id="apartado-8bis" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 8 Bis</span> EL PROTOCOLO "PERMISSION GATE" E INTERCAMBIO SEGURO DE DATOS DIRECTOS</h2>
+                <p style="color: #475569;">Este apartado regula de manera específica el funcionamiento técnico, las capas de visualización y el blindaje informático que rige la transferencia de datos personales de contacto directo entre los asistentes dentro del ecosistema de la Consultoría Monitorizada. A fin de erradicar la recolección indiscriminada de datos, las prácticas de prospección comercial invasiva (spam) y garantizar la autodeterminación informativa de los titulares, La Consultora implementa un modelo de transferencia bajo demanda gobernado por el protocolo digital "Permission Gate" (Puerta de Permisos).</p>
+
+                <h3 style="color: #1b2f38;">8 Bis.1. Arquitectura de Segmentación de Datos y Niveles de Acceso</h3>
+                <p style="color: #475569;">Para salvaguardar la privacidad de los participantes, las bases de datos transaccionales de La Consultora dividen la información de cada perfil corporativo en dos capas de acceso herméticas, independientes y diferenciadas en el backend de las plataformas y tableros visuales:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Nivel 1: Capa de Visualización Pública Corporativa (Candado Abierto):</strong> Comprende exclusivamente los activos de identidad comercial e institucional necesarios para el correcto desarrollo de las dinámicas en sala y el análisis de complementariedad. Esta información incluye de forma genérica: el nombre completo del participante, el cargo directivo o rol operativo, la denominación de la empresa o asociación que representa, el sector industrial, el enlace a su perfil profesional de LinkedIn y el inventario técnico de activos institucionales autorizados de forma previa en la fase de ingesta. Esta capa es visible por defecto para los miembros asignados al Nodo de análisis.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Nivel 2: Capa de Identidad Personal y Contacto Directo (Candado Dorado):</strong> Comprende los canales transaccionales de comunicación directa del titular, tales como su número telefónico móvil personal, dirección de correo electrónico directa y el enlace de redirección instantánea a mensajería privada corporativa (WhatsApp). Estos campos permanecen estrictamente encriptados, restringidos y ocultos por defecto en la base de datos central y en las interfaces de usuario de los demás asistentes, resultando inaccesibles para cualquier tipo de extracción manual o automatizada.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8 Bis.2. Mecánica del Protocolo "Permission Gate" (Doble Validación Opt-In)</h3>
+                <p style="color: #475569;">La transferencia de datos correspondientes al Nivel 2 (Candado Dorado) entre dos participantes jamás se ejecutará de forma masiva, automatizada o unilateral por parte de La Consultora. Dicho flujo se realizará única y exclusivamente mediante un proceso síncrono de mérito comercial y doble validación manual cruzada (Handshake Digital), sujeto a los siguientes pasos técnicos:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Iniciación de la Solicitud:</strong> El Participante A, tras identificar una coincidencia de capacidades o una oportunidad de vinculación en el tablero digital de la sesión, presiona el comando para solicitar vinculación sobre el perfil del Participante B.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Disparo del Trigger de Permisos:</strong> El sistema de La Consultora recibe la solicitud en el backend y genera una alerta instantánea y una notificación de inserción (Push) o mensaje interactivo dirigido exclusivamente a la pantalla del dispositivo móvil verificado del Participante B. El mensaje indicará textualmente: <em style="color: #1b2f38;">"El participante [Nombre de la Persona / Empresa] solicita acceso a tus datos privados de contacto directo"</em>.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Resolución Transaccional del Titular:</strong>
+                        <ul class="mt-2 border-l border-[#e59903]/50 pl-4 ml-2">
+                            <li class="!mb-1" style="color: #475569;"><strong style="color: #16262e;">Resolución Negativa:</strong> Si el Participante B selecciona de manera voluntaria el comando <strong style="color: #16262e;">[DENEGAR]</strong> (o ignora la ventana de diálogo), la transferencia se bloquea de inmediato. El Participante A jamás tendrá visibilidad del número telefónico o correo del Participante B, conservando únicamente el acceso permanente a la información genérica del Nivel 1.</li>
+                            <li class="!mb-1" style="color: #475569;"><strong style="color: #16262e;">Resolución Positiva:</strong> Si el Participante B selecciona de manera voluntaria el comando <strong style="color: #16262e;">[ACEPTAR]</strong>, el motor del sistema actualiza las llaves de seguridad encriptadas en la base de datos en tiempo real, liberando de forma exclusiva y bidireccional los campos del Nivel 2 para ambos participantes.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8 Bis.3. Naturaleza Jurídica de la Notaría Digital de Sinergias</h3>
+                <p style="color: #475569;">En el momento exacto en que ambos participantes completan satisfactoriamente el flujo de doble validación (Opt-In) del protocolo Permission Gate, el sistema de La Consultora registra una marca de tiempo (timestamp), el identificador único de usuario (UID) y la dirección IP desde la cual se otorgó la autorización.</p>
+                <p style="color: #475569;">A través de este acto, las partes acuerdan que Montecristo AInsights actúa exclusivamente en su carácter de Notaría Digital Neutra, limitándose a proveer la infraestructura tecnológica para facilitar el encuentro e indexar la traza informática del consentimiento. La Consultora queda plenamente liberada de cualquier responsabilidad respecto al uso posterior, tratamiento, almacenamiento o destino que cada uno de los participantes dé a los datos de contacto directo una vez que han sido liberados y transferidos bajo su control mutuo.</p>
+
+                <h3 style="color: #1b2f38;">8 Bis.4. Cláusula de Riesgo Operativo Transferido en Vinculaciones</h3>
+                <p style="color: #475569;">Toda comunicación, intercambio de propuestas comerciales, visitas a instalaciones, negociaciones o transacciones financieras celebradas entre los participantes posterior al desbloqueo de datos a través del protocolo Permission Gate corre bajo la cuenta, costo y riesgo absoluto de los particulares involucrados.</p>
+                <p style="color: #475569;">El Usuario exime a La Consultora de cualquier reclamo por prácticas comerciales abusivas, incumplimientos de contratos privados, filtraciones de información fuera del entorno del servicio o daños derivados de las relaciones comerciales subsecuentes que los asistentes decidan entablar de manera independiente tras la liberación voluntaria de sus identidades de contacto.</p>
+
+                <!-- Apartado 9 -->
+                <h2 id="apartado-9" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 9</span> JURISDICCIÓN, LEGISLACIÓN APLICABLE Y SOLUCIÓN DE CONTROVERSIAS</h2>
+                <p style="color: #475569;">Este apartado regula las vías legales, los mecanismos de resolución y los tribunales competentes en caso de suscitarse cualquier disputa, interpretación, incumplimiento o reclamación derivada de la prestación de los servicios de Consultoría Monitorizada.</p>
+
+                <h3 style="color: #1b2f38;">9.1. Legislación Aplicable</h3>
+                <p style="color: #475569;">Las partes acuerdan expresamente que el presente contrato, sus alcances, las obligaciones civiles, mercantiles y de protección de datos personales aquí estipuladas se regirán e interpretarán en estricto apego a las leyes federales vigentes y aplicables de la República Mexicana. Para las materias que correspondan al fuero común, se aplicará la legislación del Estado de Michoacán de Ocampo.</p>
+
+                <h3 style="color: #1b2f38;">9.2. Procedimiento Obligatorio de Mediación Privada (Mecanismo Alternativo)</h3>
+                <p style="color: #475569;">Antes de entablar cualquier acción legal, demanda civil o querella mercantil ante los tribunales, las partes se obligan de buena fe a someter la controversia a un procedimiento de conciliación y mediación privada.</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Inicio del Procedimiento:</strong> La parte inconforme deberá notificar a la otra por escrito, detallando la naturaleza de la disputa y los hechos fácticos que la sustentan.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Plazo de Negociación:</strong> Las partes fijarán una serie de mesas de trabajo conjuntas durante un plazo máximo de 30 días hábiles contados a partir de la fecha de la notificación, buscando alcanzar un convenio de transacción amistoso que resuelva la fricción. Las sesiones de mediación podrán realizarse de forma presencial o a través de videoconferencia.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">9.3. Sometimiento Jurisdiccional Expreso</h3>
+                <p style="color: #475569;">Para el caso de que las partes no logren alcanzar un acuerdo definitivo de conciliación dentro del plazo de 30 días señalado en la cláusula anterior, ambas partes renuncian expresamente a cualquier otro fuero o jurisdicción que por razón de sus domicilios presentes o futuros, escalas de facturación o ubicación de sus centros de datos pudiera corresponderles.</p>
+                <p style="color: #475569;">En consecuencia, se someten de manera irrevocable a la jurisdicción exclusiva de los Tribunales Competentes de la Ciudad de Morelia, Michoacán, para dirimir cualquier juicio, litigio o procedimiento jurisdiccional derivado de este documento.</p>
+
+                <!-- Apartado 10 -->
+                <h2 id="apartado-10" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 10</span> MISCELÁNEA CONTRACTUAL (DISPOSICIONES GENERALES)</h2>
+                <p style="color: #475569;">Este apartado consolida las reglas de interpretación y supervivencia jurídica que garantizan la validez y la estabilidad a largo plazo del ecosistema legal de La Consultora.</p>
+
+                <h3 style="color: #1b2f38;">10.1. Divisibilidad e Independencia de las Cláusulas (Salvaguarda Legal)</h3>
+                <p style="color: #475569;">Las partes acuerdan que cada una de las disposiciones y apartados contenidos en este documento opera de forma independiente. Si en el futuro un tribunal judicial o autoridad administrativa competente declara que alguna de las cláusulas, líneas o apartados de estos Términos y Condiciones es nula, inválida, ilegal o inejecutable:</p>
+                <ul>
+                    <li style="color: #475569;">Dicha nulidad afectará única y exclusivamente a la disposición específica señalada por la autoridad.</li>
+                    <li style="color: #475569;">El resto de los apartados (incluyendo las exclusiones de responsabilidad económica, la propiedad intelectual y el protocolo Permission Gate) conservarán plenamente su vigencia, obligatoriedad y efectos jurídicos, debiendo interpretarse el contrato como si la porción inválida nunca hubiera sido integrada.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">10.2. Integridad del Acuerdo (Acuerdo Total)</h3>
+                <p style="color: #475569;">El presente clausulado (conformado por sus 10 apartados y apartados bis correspondientes) constituye el acuerdo total, único y definitivo entre Montecristo AInsights y el Usuario en relación con el objeto del servicio de Consultoría Monitorizada. Este documento sustituye y deja sin efecto legal a cualquier otra negociación, propuesta, folleto publicitario, brochure comercial, correspondencia electrónica o acuerdo verbal previo celebrado entre las partes con anterioridad a su aceptación.</p>
+
+                <h3 style="color: #1b2f38;">10.3. Ausencia de Asociación Legal o Vínculo Laboral (No-Asociación)</h3>
+                <p style="color: #475569;">La participación en las sesiones de Consultoría Monitorizada y la aceptación de estos términos no constituyen, ni podrán interpretarse bajo ningún supuesto como la creación de una sociedad en nombre colectivo, una asociación en participación, una coinversión (Joint Venture), una agencia comercial, una representación legal recíproca ni una relación de carácter laboral entre La Consultora y el Usuario o la Organización que este representa. Cada una de las empresas conserva su absoluta independencia operativa, patronal y fiscal.</p>
+
+                <h3 style="color: #1b2f38;">10.4. No Renuncia de Derechos</h3>
+                <p style="color: #475569;">El hecho de que La Consultora omita o retrase el ejercicio de cualquier derecho, facultad o acción legal derivada de un incumplimiento por parte del Usuario a estos términos, no operará bajo ninguna circunstancia como una renuncia implícita a dicho derecho, ni impedirá a La Consultora ejercitarlo con posterioridad en su total extensión legal ante eventos futuros de la misma naturaleza.</p>
+
+                <!-- Casilla de Aceptación Previa (Móvil) -->
+                <div class="block lg:hidden bg-[#f8fafc] border-2 border-slate-300 rounded-lg p-6 mt-12 mb-4 shadow-md">
+                    <label class="flex items-start gap-4 cursor-pointer group">
+                        <div class="relative flex-shrink-0 mt-1">
+                            <input type="checkbox" id="consent-checkbox-mobile" class="peer sr-only">
+                            <div class="w-7 h-7 border-2 border-slate-400 rounded bg-white peer-checked:bg-[#e59903] peer-checked:border-[#e59903] transition-colors flex items-center justify-center group-hover:border-[#e59903]">
+                                <i class="fas fa-check text-white text-base opacity-0 peer-checked:opacity-100 transition-opacity"></i>
+                            </div>
+                        </div>
+                        <span class="text-[15px] text-[#16262e] font-bold leading-snug">
+                            He realizado el recorrido del documento y declaro expresamente que entiendo y acepto estos Términos y Condiciones.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-slate-200 text-center">
+                    <p class="text-[#e59903] font-bold tracking-[0.2em] uppercase text-[10px] mb-2 font-montserrat">Marco Legal Operativo de Montecristo AInsights</p>
+                    <p class="text-slate-500 text-xs">Fecha de última actualización formal: 20 de Julio de 2026.</p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Pie de Página (Footer) -->
+    <footer id="contacto" class="bg-[#121f26] text-slate-400 pt-20 pb-10 border-t border-[#005f73]/20 relative z-10">
+         <div class="container mx-auto px-6 lg:px-12 grid md:grid-cols-12 gap-12 mb-16">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                 <div>
+                     <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo Logo" class="h-12 lg:h-14 w-auto mb-8 object-contain">
+                 </div>
+            </div>
+
+            <div class="md:col-span-2">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Explorar</h5>
+                <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                    <li><a href="/#ecosistema" class="hover:text-white transition-colors flex items-center gap-2">M.I.N.D.</a></li>
+                    <li><a href="/#evos" class="hover:text-white transition-colors flex items-center gap-2">EVOS</a></li>
+                    <li><a href="/#aura" class="hover:text-white transition-colors flex items-center gap-2">AURA</a></li>
+                    <li><a href="/#nwid" class="hover:text-white transition-colors flex items-center gap-2">NWiD</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-2">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Legal</h5>
+                <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                    <li><a href="Aviso_de_Privacidad.html" class="hover:text-white transition-colors">Aviso de Privacidad</a></li>
+                    <li><a href="#" class="text-[#e59903] font-semibold transition-colors">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 text-left md:text-right flex flex-col items-start md:items-end">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Contacto Directo</h5>
+                <a href="mailto:team@montecristoainsights.com" class="text-lg lg:text-2xl font-serif text-white block mb-4 hover:text-[#e59903] transition-colors">team@montecristoainsights.com</a>
+                
+                <a href="https://wa.me/523318190928" target="_blank" class="text-sm font-medium text-slate-300 hover:text-[#e59903] font-montserrat flex items-center gap-2 transition-colors">
+                    <i class="fab fa-whatsapp text-xl text-[#25D366]"></i> +52 33 1819 0928
+                </a>
+                
+                <div class="flex justify-start md:justify-end gap-3 mt-8 flex-wrap">
+                    <a href="https://www.linkedin.com/company/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+         </div>
+
+         <div class="container mx-auto px-6 lg:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+             <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat">© 2026 Montecristo AInsights. Todos los derechos reservados.</p>
+             <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat">Arquitectura de Negocios</p>
+         </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Sincronización de las casillas de verificación (Desktop / Mobile)
+            const checkboxDesktop = document.getElementById('consent-checkbox-desktop');
+            const checkboxMobile = document.getElementById('consent-checkbox-mobile');
+
+            if(checkboxDesktop && checkboxMobile) {
+                checkboxDesktop.addEventListener('change', (e) => {
+                    checkboxMobile.checked = e.target.checked;
+                });
+                checkboxMobile.addEventListener('change', (e) => {
+                    checkboxDesktop.checked = e.target.checked;
+                });
+            }
+
+            // Lógica del Header Scroll
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('nav-scrolled');
+                    header.classList.remove('py-6', 'border-b', 'border-white/10');
+                } else {
+                    header.classList.remove('nav-scrolled');
+                    header.classList.add('py-6', 'border-b', 'border-white/10');
+                }
+            });
+
+            // Lógica del Menú Móvil
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                document.body.classList.toggle('overflow-hidden');
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+            closeMenuBtn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+            
+            // Lógica para resaltar el índice lateral al hacer scroll (ScrollSpy simple)
+            const sections = document.querySelectorAll('.legal-content h2');
+            const navLinks = document.querySelectorAll('.toc-container nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-[#e59903]', 'font-semibold');
+                    link.classList.add('text-slate-400');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('text-[#e59903]', 'font-semibold');
+                        link.classList.remove('text-slate-400');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

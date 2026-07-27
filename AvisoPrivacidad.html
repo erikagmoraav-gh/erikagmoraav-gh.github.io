@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aviso de Privacidad Integral | Montecristo AInsights</title>
+    
+    <!-- Meta SEO Básico -->
+    <meta name="description" content="Aviso de Privacidad Integral de Montecristo AInsights. Servicios de Consultoría Monitorizada y protección de datos empresariales.">
+    <meta name="theme-color" content="#16262e">
+
+    <!-- Favicons (Asegúrate de mantener las rutas correctas) -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Fuentes Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        :root {
+            --color-dark: #16262e;
+            --color-dark-light: #1b2f38;
+            --color-gold: #e59903;
+            --color-gold-light: #ffb733;
+            --color-white: #ffffff;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--color-dark);
+            background-color: #16262e;
+            overflow-x: hidden;
+            font-weight: 400;
+        }
+        
+        .font-serif {
+            font-family: 'DM Serif Display', serif;
+        }
+
+        .text-gold-gradient {
+            background: linear-gradient(135deg, #c68400 0%, #e59903 50%, #ffe082 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .btn-architect {
+            position: relative;
+            padding: 0.8rem 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow: hidden;
+            z-index: 20;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn-architect::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            background-color: var(--color-gold);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+        
+        .btn-architect:hover::before {
+            width: 100%;
+        }
+
+        .nav-scrolled {
+            background: rgba(22, 38, 46, 0.98);
+            backdrop-filter: blur(10px);
+            padding-top: 1rem !important;
+            padding-bottom: 1rem !important;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        /* Estilos específicos para el documento legal */
+        .legal-content h2 {
+            font-family: 'DM Serif Display', serif;
+            font-size: 1.75rem;
+            color: #ffffff;
+            margin-top: 3.5rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid rgba(229, 153, 3, 0.3);
+            line-height: 1.2;
+        }
+        @media (min-width: 768px) { .legal-content h2 { font-size: 2.25rem; } }
+
+        .legal-content h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #e2e8f0;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.025em;
+        }
+
+        .legal-content p {
+            color: #94a3b8;
+            line-height: 1.75;
+            margin-bottom: 1.25rem;
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul {
+            list-style-type: none;
+            padding-left: 0;
+            margin-bottom: 1.5rem;
+        }
+
+        .legal-content ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 1rem;
+            color: #94a3b8;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .legal-content ul li::before {
+            content: '■';
+            position: absolute;
+            left: 0;
+            top: 0.1rem;
+            color: #e59903;
+            font-size: 0.6rem;
+        }
+
+        .legal-content strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Scrollbar personalizado para la navegación lateral */
+        .toc-container::-webkit-scrollbar { width: 4px; }
+        .toc-container::-webkit-scrollbar-track { background: transparent; }
+        .toc-container::-webkit-scrollbar-thumb { background: rgba(229, 153, 3, 0.3); border-radius: 4px; }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Menú Móvil (Replicado de index) -->
+    <div id="mobile-menu" class="fixed inset-0 bg-[#16262e] z-[60] transform translate-x-full transition-transform duration-500 flex flex-col items-center justify-center">
+        <button id="close-menu-btn" class="absolute top-8 right-8 text-white text-3xl hover:text-[#e59903] transition-colors">
+            <i class="fas fa-times"></i>
+        </button>
+        <nav class="flex flex-col gap-8 text-center">
+            <a href="/" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Inicio</a>
+            <a href="/#ecosistema" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Soluciones</a>
+            <a href="/#filosofia" class="mobile-link text-3xl font-serif text-white hover:text-[#e59903] transition-colors font-semibold">Filosofía</a>
+        </nav>
+        <div class="mt-12 flex gap-4 flex-wrap justify-center px-6">
+            <a href="https://www.linkedin.com/company/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-tiktok"></i></a>
+            <a href="https://www.youtube.com/@montecristoainsights" target="_blank" class="text-white/50 hover:text-[#e59903] text-xl transition-all w-10 h-10 flex items-center justify-center border border-white/10 rounded-full"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    <!-- Navegación Principal (Replicado de index) -->
+    <header class="fixed w-full top-0 z-50 transition-all duration-500 py-6 border-b border-white/10" id="main-header">
+        <div class="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+            <a href="/" class="flex items-center relative z-50">
+                 <!-- Logotipo Montecristo -->
+                 <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo AInsights" class="h-10 md:h-16 w-auto object-contain transition-all duration-300">
+            </a>
+            <nav class="hidden lg:flex items-center space-x-14">
+                <a href="/" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Inicio
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="/#ecosistema" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Soluciones
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="/#filosofia" class="text-[11px] font-medium text-white hover:text-[#e59903] uppercase tracking-[0.2em] transition-colors relative group font-montserrat">
+                    Filosofía
+                    <span class="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-[#e59903] transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
+                </a>
+                <a href="https://wa.me/523318190928" target="_blank" class="btn-architect text-[#e59903] border border-[#e59903]/50 hover:border-[#e59903] hover:text-[#16262e] font-semibold">
+                    Contacto
+                </a>
+            </nav>
+             <button id="mobile-menu-btn" class="lg:hidden text-white hover:text-[#e59903] text-2xl transition-colors">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Header Interno del Documento -->
+    <section class="pt-40 pb-16 lg:pt-48 lg:pb-20 bg-[#16262e] border-b border-white/5 relative overflow-hidden">
+        <!-- Elementos decorativos de fondo -->
+        <div class="absolute top-0 inset-x-0 h-[1px] bg-gradient-to-r from-transparent via-[#e59903]/30 to-transparent"></div>
+        <div class="absolute right-0 top-0 w-96 h-96 bg-[#e59903]/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 lg:px-12 relative z-10 text-center">
+            <div class="inline-flex items-center gap-4 mb-6">
+                <div class="w-8 h-[1px] bg-[#e59903]"></div>
+                <span class="text-[#e59903] font-bold tracking-[0.3em] uppercase text-[10px] font-montserrat">Gobernanza de Datos</span>
+                <div class="w-8 h-[1px] bg-[#e59903]"></div>
+            </div>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-serif text-white mb-6">Aviso de Privacidad Integral</h1>
+            <p class="text-slate-400 font-medium text-sm md:text-base max-w-2xl mx-auto uppercase tracking-widest">Servicios de Consultoría Monitorizada</p>
+            <p class="text-slate-500 text-xs mt-8">Fecha de última actualización: 20 de Julio de 2026</p>
+        </div>
+    </section>
+
+    <!-- Contenedor Principal (Índice + Contenido Legal) -->
+    <section class="py-16 lg:py-24 bg-[#16262e] flex-grow">
+        <div class="container mx-auto px-6 lg:px-12 flex flex-col lg:flex-row gap-16 relative">
+            
+            <!-- Índice Lateral (Sticky) para Desktop -->
+            <aside class="hidden lg:block w-1/4 relative">
+                
+                <div class="sticky top-32 max-h-[calc(100vh-18rem)] flex flex-col toc-container pr-6 border-l border-white/5 pl-6 overflow-y-auto">
+                    <div>
+                        <h4 class="text-[#e59903] font-bold tracking-[0.2em] uppercase text-[10px] mb-8">Índice de Contenidos</h4>
+                        <nav class="space-y-4 mb-12">
+                            <a href="#apartado-1" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">1. Datos Personales Objeto de Tratamiento</a>
+                            <a href="#apartado-2" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">2. Finalidades del Tratamiento</a>
+                            <a href="#apartado-3" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">3. El Protocolo "Permission Gate" y Transferencias</a>
+                            <a href="#apartado-4" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">4. Ejercicio de Derechos ARCO</a>
+                            <a href="#apartado-5" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">5. Medidas de Seguridad y Modificaciones</a>
+                            <a href="#apartado-6" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">6. Aceptación y Consentimiento</a>
+                            <a href="#apartado-7" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">7. Exclusión de Responsabilidad Tecnológica</a>
+                            <a href="#apartado-8" class="block text-xs text-slate-400 hover:text-white transition-colors leading-relaxed">8. Propiedad Intelectual y Co-Uso de Marcas</a>
+                        </nav>
+                    </div>
+
+                    <!-- Casilla de Aceptación Previa (Desktop) - Movida debajo del índice -->
+                    <div class="bg-[#1b2f38] border border-[#e59903]/30 rounded-lg p-5 shadow-lg mt-4">
+                        <label class="flex items-start gap-3 cursor-pointer group">
+                            <div class="relative flex-shrink-0 mt-0.5">
+                                <input type="checkbox" id="consent-checkbox-desktop" class="peer sr-only">
+                                <div class="w-5 h-5 border-2 border-slate-500 rounded bg-transparent peer-checked:bg-[#e59903] peer-checked:border-[#e59903] transition-colors flex items-center justify-center group-hover:border-[#e59903]">
+                                    <i class="fas fa-check text-white text-xs opacity-0 peer-checked:opacity-100 transition-opacity"></i>
+                                </div>
+                            </div>
+                            <span class="text-xs text-slate-300 font-medium leading-relaxed group-hover:text-white transition-colors">
+                                Declaro expresamente que he leído, entiendo y acepto las condiciones de este Aviso de Privacidad.
+                            </span>
+                        </label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Área de Contenido Legal (Fondo Blanco) -->
+            <main class="w-full lg:w-3/4 legal-content bg-white rounded-xl p-8 lg:p-12 border border-slate-200 shadow-2xl relative">
+                
+                <!-- Apartado 1 -->
+                <h2 id="apartado-1" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3); margin-top: 0;"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 1</span> DATOS PERSONALES OBJETO DE TRATAMIENTO (LA INGESTA TÁCTICA)</h2>
+                <p style="color: #475569;">En cumplimiento con los artículos 8, 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y los Lineamientos Oficiales del INAI, Montecristo AInsights (en adelante, "La Consultora"), en su carácter de Responsable del tratamiento, hace del conocimiento de los titulares (participantes e instituciones) la taxonomía y el inventario exacto de los datos personales que son objeto de ingesta, procesamiento y análisis dentro de sus servicios de consultoría monitorizada.</p>
+                <p style="color: #475569;">Para garantizar el principio de proporcionalidad, licitud y el estricto blindaje de la confidencialidad empresarial, los datos tratados se agrupan en cuatro momentos de captura y producción de información:</p>
+
+                <h3 style="color: #1b2f38;">1.1. Información Recabada ANTES del Evento (Alta de Participantes e Ingesta Previa)</h3>
+                <p style="color: #475569;">Comprende la infraestructura de datos provista de manera voluntaria por el titular durante el proceso de registro, validación de acceso y precarga de perfiles mediante herramientas de mensajería instantánea o formularios digitales:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Datos de Identidad Base:</strong> Nombre completo, apellidos y datos de contacto oficiales tales como dirección de correo electrónico corporativo, número telefónico móvil y enlaces directos a canales de comunicación instantánea de uso profesional.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Identidad Organizacional Fáctica:</strong> Nombre de la entidad, empresa, gremio, asociación o negocio que representa formalmente, cargo directivo o rol operativo desempeñado, y sector industrial o giro económico específico de la organización.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Datos de Perfilado Comercial Previo:</strong> Respuestas detalladas a cuestionarios de diagnóstico inicial, descripciones de los antecedentes del participante, definición explícita de sus fortalezas y metas de vinculación corporativa.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">1.2. Información Recabada DURANTE el Evento (Monitoreo e Interacción en Sitio)</h3>
+                <p style="color: #475569;">Comprende el registro de las interacciones, debates y respuestas a ejercicios metodológicos que ocurren en tiempo real dentro de las sesiones y mesas de trabajo monitorizadas:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Datos Acústicos y Frecuencias de Voz (Tratamiento Local):</strong> Captura de audio a través de los sistemas de microfonía satélite y dispositivos de procesamiento instalados en el recinto con la única finalidad de realizar la separación y atribución automatizada de las voces de los hablantes (Diarización de Voz).<br>
+                    <em class="text-[#e59903] text-xs mt-1 block font-semibold">Principio de Seguridad Acústica: El procesamiento acústico se ejecuta de manera automatizada y neutra. El sistema no almacena ni conserva las conversaciones informales o de carácter estrictamente privado de forma permanente, limitándose a indexar las aportaciones técnicas y exposiciones necesarias para la consultoría.</em></li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Metadatos No Verbales:</strong> Registro de pausas, silencios prolongados, variaciones de volumen e interrupciones válidas en la conversación, procesados como indicadores estadísticos para evaluar la dinámica de participación y el balance de habla corporativa.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Datos de Fricción Operativa y Comportamiento Lógico:</strong> Respuestas explícitas a dilemas de gestión organizacionales, argumentos orales expuestos durante ejercicios de debate y la declaración formal de problemáticas internas críticas (causas raíz) o cuellos de botella que afecten la rentabilidad de su organización.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">1.3. Información Recabada A TRAVÉS del Evento (Documentación Solicitada)</h3>
+                <p style="color: #475569;">Comprende el patrimonio informativo y los activos documentales provistos por el participante para complementar el análisis estructural de su negocio:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Activos Documentales Corporativos:</strong> Archivos en formato PDF o digital relacionados con brochures comerciales, catálogos de servicios vigentes, portafolios de evidencia, casos de éxito, manuales de procesos internos, semblanzas ejecutivas (One-Pagers) o presentaciones de marca corporativa.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Información de Ecosistemas Cruzados:</strong> Datos documentados sobre infraestructura disponible, capacidad instalada de producción, accesos a capital, relaciones gremiales secundarias o inversiones activas en otros sectores económicos que sirvan para mapear el alcance total de la organización.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">1.4. Información PRODUCIDA por Parte de Montecristo AInsights</h3>
+                <p style="color: #475569;">Comprende el output o resultado final derivado del procesamiento algorítmico y del análisis de datos ejecutado por la inteligencia de La Consultora:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Entregables Analíticos y Diagnósticos:</strong> Reportes de afinidad, matrices de soluciones personalizadas, hojas de ruta estratégicas para la toma de decisiones y planes de acción específicos de vinculación generados tras el evento.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Métricas de Desempeño y Perfilado Conductual:</strong> Puntuaciones de coincidencia técnica corporativa (Match Scores), micro-perfiles psicométricos de estilo de liderazgo derivados del análisis del habla y tableros estadísticos de interacciones atemporales diseñados para la maduración de las sinergias comerciales.</li>
+                </ul>
+
+                <!-- Apartado 2 -->
+                <h2 id="apartado-2" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 2</span> FINALIDADES DEL TRATAMIENTO DE LOS DATOS PERSONALES</h2>
+                <p style="color: #475569;">De conformidad con los artículos 15 y 16 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP) y su Reglamento, Montecristo AInsights hace del conocimiento de los titulares las finalidades que justifican y dan origen al tratamiento de la información recabada.</p>
+                <p style="color: #475569;">Para garantizar la máxima transparencia y el estricto cumplimiento legal, el procesamiento de los datos se divide y segmenta entre <strong style="color: #16262e;">Finalidades Primarias</strong> (aquellas que son estrictamente necesarias para la existencia, mantenimiento y cumplimiento de la relación jurídica de la consultoría monitorizada) y <strong style="color: #16262e;">Finalidades Secundarias</strong> (aquellas finalidades accesorias que complementan el valor del servicio a largo plazo).</p>
+
+                <h3 style="color: #1b2f38;">2.1. Finalidades Primarias (Estrictamente Necesarias para el Servicio)</h3>
+                <p style="color: #475569;">Estas finalidades constituyen la base operativa y el núcleo técnico por el cual el participante formaliza su alta en los entornos de La Consultora. Los datos obtenidos antes, durante y a través de las sesiones, así como lo producido con posterioridad, se tratarán obligatoriamente para:</p>
+                
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">A. Gestión Operativa e Infraestructura de Acceso (Antes del Evento)</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Validación y Registro de Asistentes:</strong> Procesar las solicitudes de inscripción y dar de alta formalmente los perfiles de los participantes en las bases de datos de La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Configuración de Identidades Digitales:</strong> Crear y precargar las fichas técnicas de identidad corporativa y de contacto que servirán como la interfaz de visualización pública entre las organizaciones participantes.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Indexación de Perfiles de Negocio:</strong> Analizar y estructurar la información recopilada previamente en los cuestionarios de registro para alimentar el motor de diagnóstico con los antecedentes de cada organización.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">B. Procesamiento Acústico y Diarización Automatizada (Durante el Evento)</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Separación y Atribución Fáctica de Hablantes:</strong> Procesar de forma local las señales de audio captadas por la microfonía para aislar las voces de los participantes, permitiendo al sistema identificar con total precisión matemática quién toma la palabra en cada una de las mesas de trabajo.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Nombrado de Perfiles en Pantalla:</strong> Actualizar en tiempo real las etiquetas de los participantes dentro del sistema de visualización de la sesión, migrando los flujos de audio identificados del estado genérico de sistema al nombre real verificado del titular.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Auditoría de Interacción y Flujo Conversacional:</strong> Medir los tiempos de intervención, las pautas no verbales y la latencia para detectar periodos de inactividad que requieran la intervención del personal técnico o de los facilitadores a fin de mantener el ritmo dinámico de la sesión.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">C. Análisis Semántico y Mapeo Estratégico (A Través del Evento)</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Desglose de Problemáticas Organizacionales:</strong> Procesar mediante herramientas de inteligencia artificial las causas raíz y los cuellos de botella operativos declarados por los empresarios a lo largo de los ejercicios de diagnóstico.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Clasificación Taxonómica de Activos:</strong> Categorizar semánticamente las aportaciones de valor, recursos y soluciones ofrecidas de forma oral o documental por los participantes, encuadrándolas estrictamente bajo las vías metodológicas corporativas de Inteligencia (conocimiento), Influencia (capital relacional) e Intervención (infraestructura y recursos físicos).</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Evaluación de Documentación Corporativa:</strong> Analizar el contenido de los brochures, presentaciones, manuales y catálogos aportados a través de las sesiones para extraer de forma automática capacidades e intenciones comerciales que complementen los perfiles de negocio.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">D. Generación de Modelos de Afinidad y Emparejamiento Empresarial</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Clústeres Estructurados de Sinergia:</strong> Someter la información consolidada de todas las fases a un procesamiento multicriterio para agrupar de manera exacta a los participantes en células balanceadas de 6 personas, optimizando la densidad operativa y mitigando el riesgo de asimetría o competencia directa en las mesas de trabajo.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Cruces bajo Criterios de Compatibilidad:</strong> Evaluar las variables operativas en el backend a través de la metodología de La Consultora, buscando la máxima correlación en las áreas de complementariedad de cadena de suministro, ritmos de toma de decisiones, ecuaciones de oferta/demanda, escalas de facturación, alcances geopolíticos, momentos vitales del fundador e índices de innovación organizacional.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">E. Compilación y Emisión Automatizada de Resultados (Producido por Montecristo)</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Disparo de Entregables Tácticos:</strong> Ejecutar el cierre síncronizado de captura de datos y enviar directamente a los dispositivos móviles de los usuarios las matrices de soluciones, hojas de ruta de liquidez comercial, perfiles de afinidad y reportes personalizados resultantes.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Medición y Feedback Conductual:</strong> Calcular métricas específicas de desempeño conversacional (Share of Voice) para estructurar el reporte de estilo de liderazgo, arrojando perfiles basados en los arquetipos de comportamiento del sistema (Estratega, Conector, Ejecutor o Auditor) como un activo de autoconocimiento de valor agregado para el líder de la empresa.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">2.2. Finalidades Secundarias (Accesorias al Servicio)</h3>
+                <p style="color: #475569;">Estas finalidades no son estrictamente necesarias para la ejecución inmediata de la sesión de consultoría monitorizada, pero facultan a La Consultora para robustecer el valor patrimonial del socio a mediano y largo plazo:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Maduración Atemporal de Sinergias:</strong> Incorporar las métricas de afinidad e interacciones validadas dentro de los tableros digitales de seguimiento a largo plazo de los socios, permitiendo que el motor de búsqueda siga sugiriendo conexiones comerciales semanas o meses después de concluida la sesión presencial.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Mantenimiento de la Huella Persistente de Red:</strong> Conservar y actualizar el historial y perfil del participante para que su "huella corporativa" sirva como un activo persistente que pueda realizar matches dinámicos con participantes de otras sedes, gremios o futuras ediciones de los eventos organizados por La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Optimización Tecnológica y de Marca:</strong> Utilizar los datos léxicos, transcripciones e interacciones de forma totalmente disociada y anonimizada para efectos de control de calidad, auditoría interna de procesos y el entrenamiento continuado de los algoritmos de diagnóstico predictivo de La Consultora.</li>
+                </ul>
+                <p style="color: #475569;"><strong style="color: #16262e;">Mecanismo de Negativa para Finalidades Secundarias:</strong> El titular tiene el derecho de manifestar su negativa para que sus datos personales sean tratados para las finalidades secundarias mediante el envío de una solicitud por escrito al correo <a href="mailto:team@montecristoainsights.com" class="text-[#e59903] hover:underline font-semibold">team@montecristoainsights.com</a>. El hecho de ejercer este derecho no podrá ser motivo para condicionar o restringir el acceso a los servicios principales de consultoría monitorizada en sitio ni menoscabar la entrega de sus reportes analíticos primarios.</p>
+
+                <!-- Apartado 3 -->
+                <h2 id="apartado-3" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 3</span> EL PROTOCOLO "PERMISSION GATE" Y TRANSFERENCIA DE DATOS</h2>
+                <p style="color: #475569;">En estricto apego a los artículos 36 y 37 de la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP), su Reglamento y los estándares de gobernanza de información de Montecristo AInsights, se delimitan las reglas, transferencias y el protocolo de seguridad transaccional en tiempo real que rige la divulgación de la data recabada y producida dentro de los servicios de consultoría monitorizada.</p>
+                <p style="color: #475569;">Para garantizar que ningún dato personal directo sea expuesto sin el consentimiento explícito del titular, La Consultora implementa un esquema de Riesgo Operativo Transferido y el protocolo técnico denominado <strong style="color: #16262e;">"Permission Gate"</strong> (Puerta de Permisos).</p>
+
+                <h3 style="color: #1b2f38;">3.1. Arquitectura del Protocolo "Permission Gate" (Segmentación de Datos en Tiempo Real)</h3>
+                <p style="color: #475569;">El sistema de La Consultora reconfigura automáticamente los niveles de visualización y acceso a la base de datos de los participantes durante y después del evento. Por defecto, la información se divide en dos capas herméticas de visualización, lo que impide la transferencia indiscriminada o el "correteo" comercial invasivo:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Nivel 1 (Acceso Público / Candado Abierto):</strong> Comprende exclusivamente los datos de identidad corporativa e institucional básicos que son visibles para la totalidad del Nodo o sala de consultoría. Esto incluye el nombre completo del participante, el logotipo y nombre de la empresa o asociación que representa, su cargo directivo, perfil general de LinkedIn y el resumen técnico de sus fortalezas o activos documentales autorizados de forma previa.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Nivel 2 (Acceso Privado / Candado Dorado):</strong> Comprende los datos de contacto directo e identidad personal del titular, tales como su número telefónico móvil personal, dirección de correo electrónico directa y el enlace transaccional de WhatsApp personal. Estos campos permanecen encriptados y ocultos por defecto en el sistema central y en los dispositivos de los demás participantes.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">Mecánica de Desbloqueo y Consentimiento Expreso (Handshake Digital)</p>
+                <p style="color: #475569;">La transferencia de datos de contacto directo (Nivel 2) entre participantes no es gestionada de forma masiva ni unilateral por La Consultora. Se ejecuta estrictamente bajo un protocolo de mérito, valor y doble validación (Opt-in manual) en sitio o a través del tablero digital:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Solicitud de Enlace:</strong> El Participante A inicia una solicitud de vinculación escaneando el código de acceso digital (CAD) o seleccionando el perfil del Participante B dentro del sistema.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Activación del Trigger:</strong> El sistema de La Consultora envía una alerta instantánea y una notificación de inserción (Push) exclusiva al dispositivo del Participante B, indicando textualmente: <em style="color: #1b2f38;">"El participante [Nombre] solicita acceso a tus datos privados de contacto (Teléfono/WhatsApp)"</em>.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Resolución Transaccional:</strong>
+                        <ul class="mt-2 border-l border-[#e59903]/50 pl-4 ml-2">
+                            <li class="!mb-1" style="color: #475569;">Si el Participante B presiona de forma manual el comando <strong style="color: #16262e;">[DENEGAR]</strong>, la transferencia se bloquea de inmediato. El Participante A solo conservará el acceso permanente a la información pública del Nivel 1.</li>
+                            <li style="color: #475569;">Si el Participante B presiona de forma manual el comando <strong style="color: #16262e;">[ACEPTAR]</strong>, el sistema actualiza los permisos encriptados en la base de datos en tiempo real, liberando los campos ocultos de forma exclusiva para el Participante A. La Consultora actúa en este acto únicamente como una Notaría Digital que formaliza y resguarda la traza de dicha autorización.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">3.2. Transferencias de Datos que NO Requieren Consentimiento del Titular</h3>
+                <p style="color: #475569;">De conformidad con el artículo 37 de la LFPDPPP, La Consultora podrá realizar transferencias nacionales o internacionales de datos personales sin el consentimiento del titular exclusivamente en los siguientes supuestos legales que impactan la operación técnica del servicio:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Proveedores de Infraestructura Tecnológica Híbrida:</strong> Transferencia de flujos de audio e información transcrita cruda hacia los servidores de almacenamiento en la nube y API de procesamiento semántico (como servicios de Firebase, AWS o herramientas de diarización y síntesis de voz) de terceros subcontratados. Estas entidades operan bajo estrictos contratos de tratamiento de datos en su carácter de Encargados, obligadas por ley a mantener la confidencialidad absoluta, el cifrado de datos en tránsito y reposo, y la prohibición de usar la data para fines de entrenamiento propio o comercialización.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Cumplimiento de Obligaciones Legales y Autoridades:</strong> Cuando la transferencia sea necesaria o legalmente exigida para la salvaguarda de un interés público, o para la procuración o administración de justicia ante requerimientos judiciales de autoridades competentes debidamente fundados y motivados.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Sociedades Controladoras y Filiales:</strong> Compartir información con Sociedades Controladoras, subsidiarias o afiliadas bajo el control común de Montecristo AInsights, las cuales operen bajo los mismos procesos y políticas internas de privacidad y seguridad institucional.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">3.3. Cláusula de Transferencia con Terceros (Simbiosis Institucional con las Sedes)</h3>
+                <p style="color: #475569;">Cuando las sesiones de consultoría monitorizada se realicen en co-organización o alianza bajo el modelo de simbiosis operativa con instituciones terceras (tales como Cámaras de Comercio, Asociaciones Civiles, Colegios de Profesionales o Coworks que funjan como Sedes del Nodo), La Consultora compartirá exclusivamente la información de registro básico e interacciones generales necesarias para la retención y administración interna de los afiliados de dicha institución.</p>
+                <p style="color: #475569;"><strong style="color: #16262e;">Convenio de Confidencialidad:</strong> Estas instituciones firman un protocolo estricto de corresponsabilidad en el tratamiento de los datos. Tienen estrictamente prohibido utilizar la información generada para fines de venta masiva (spam), bases de datos externas o cualquier actividad ajena al ecosistema de consultoría autorizado por el titular.</p>
+
+                <!-- Apartado 4 -->
+                <h2 id="apartado-4" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 4</span> MEDIOS PARA EJERCER LOS DERECHOS ARCO Y REVOCACIÓN</h2>
+                <p style="color: #475569;">De conformidad con las disposiciones de la LFPDPPP, su Reglamento y los Lineamientos Oficiales emitidos por el INAI, los titulares de los datos personales (participantes e instituciones) gozan en todo momento del derecho inalienable de Acceso, Rectificación, Cancelación y Oposición (Derechos ARCO) sobre la información recopilada antes, durante y a través de las sesiones de consultoría monitorizada, así como sobre lo producido por la misma.</p>
+                <p style="color: #475569;">Asimismo, los titulares cuentan con el derecho de revocar el consentimiento otorgado previamente para el tratamiento de su información patrimonial o corporativa.</p>
+
+                <h3 style="color: #1b2f38;">4.1. Designación del Área Responsable de la Protección de Datos</h3>
+                <p style="color: #475569;">Para garantizar la correcta recepción, trámite, seguimiento y resolución de cualquier solicitud, Montecristo AInsights ha designado y facultado formalmente a su <strong style="color: #16262e;">Oficina de Cumplimiento y Gestión de Calidad</strong> como la entidad interna encargada de la seguridad de la información. Los datos de contacto oficiales son:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Dirección de Correo Electrónico Institucional:</strong> <a href="mailto:team@montecristoainsights.com" class="text-[#e59903] hover:underline font-semibold">team@montecristoainsights.com</a></li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Canal Transaccional de Atención:</strong> +52 33 1819 0928</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Horario de Atención Operativa:</strong> Lunes a Viernes de 09:00 a 18:00 horas (Tiempo del Centro de México).</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">4.2. Procedimiento para el Ejercicio de los Derechos ARCO</h3>
+                <p style="color: #475569;">El titular o su representante legal debidamente acreditado podrá iniciar el procedimiento enviando un escrito libre o formato de solicitud exclusivamente al correo <a href="mailto:team@montecristoainsights.com" class="text-[#e59903] hover:underline font-semibold">team@montecristoainsights.com</a>.</p>
+                
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">A. Requisitos de la Solicitud</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Datos del Titular:</strong> Nombre completo del titular, denominación de la empresa o negocio que representa y medios de contacto oficiales para notificar la resolución.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Acreditación de Identidad:</strong> Copia digitalizada de una identificación oficial vigente con fotografía (INE, Pasaporte o Cédula Profesional). En caso de representante legal, copia del instrumento público o carta poder firmada ante dos testigos, junto con la identificación oficial del apoderado.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Descripción Clara del Derecho:</strong> Indicación precisa de cuál de los Derechos ARCO se desea ejercer (Acceso, Rectificación, Cancelación u Oposición).</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Especificación de los Datos:</strong> Descripción meticulosa de los datos personales específicos sobre los cuales se busca ejercer el derecho.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Documentación de Soporte:</strong> Para Rectificación, adjuntar documentos oficiales que acrediten la modificación solicitada.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">B. Plazos y Etapas de Respuesta</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Prevención por Insuficiencia (T+5 días):</strong> Si la solicitud no cumple los requisitos, La Consultora prevendrá al titular en 5 días hábiles. El titular tendrá 10 días hábiles para subsanar; de no hacerlo, se tendrá por no presentada.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Término de Dictamen (20 días):</strong> La Oficina de Cumplimiento emitirá resolución en un plazo máximo de 20 días hábiles desde la recepción de la solicitud completa.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Plazo de Ejecución (15 días):</strong> Si el dictamen es procedente, se hará efectivo dentro de los 15 días hábiles siguientes a la notificación.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">4.3. Alcance Específico de las Acciones ARCO en Entornos Monitorizados</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Acceso:</strong> Derecho a conocer qué datos de registro, metadatos y documentos han sido indexados, y obtener copia digital de reportes producidos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Rectificación:</strong> Corregir errores en el nombre de la empresa, catálogo de servicios o metas de vinculación.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Cancelación:</strong> Borrado total y permanente de la información fáctica (perfiles, documentación, reportes analíticos y desvinculación absoluta de la huella de voz).</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Oposición:</strong> Negarse a que datos o documentos sean utilizados en módulos específicos, como análisis conductual o tableros atemporales, limitando el tratamiento a la sesión en tiempo real.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">4.4. Procedimiento para Revocar el Consentimiento</h3>
+                <p style="color: #475569;">El titular podrá revocar en cualquier momento el consentimiento enviando solicitud al correo oficial. El escrito deberá especificar con claridad la intención de retirar el consentimiento legal otorgado.</p>
+                <p style="color: #475569;"><strong style="color: #16262e;">Consideración Importante de Continuidad:</strong> La revocación para finalidades primarias implicará la imposibilidad técnica de prestar los servicios de consultoría monitorizada, resultando en la baja automática del participante del ecosistema del Nodo.</p>
+
+                <!-- Apartado 5 -->
+                <h2 id="apartado-5" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 5</span> MEDIDAS DE SEGURIDAD Y MODIFICACIONES AL AVISO</h2>
+                <p style="color: #475569;">En estricto cumplimiento con la LFPDPPP, Montecristo AInsights detalla los protocolos implementados para blindar la información recabada antes, durante y a través de las sesiones, así como lo producido por las mismas, bajo un estándar de máxima protección mutua y Riesgo Operativo Transferido.</p>
+
+                <h3 style="color: #1b2f38;">5.1. Medidas de Seguridad de la Información (Grado Industrial)</h3>
+                
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">A. Medidas de Seguridad Técnicas y Tecnológicas</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Cifrado de Datos End-to-End:</strong> Información recabada, activos y reportes se transmiten y almacenan utilizando protocolos avanzados de cifrado (AES-256 y SSL/TLS).</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Aislamiento y Sanitización Acústica Local:</strong> El procesamiento de flujos de audio aísla frecuencias técnicas y destruye registros informales detectados fuera del marco metodológico.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Trazabilidad y Cajas de Cristal:</strong> Protocolos de auditoría de código (Logs automatizados) impiden la alteración de la "huella corporativa".</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Filtros de Seguridad Algorítmica (Safety Net):</strong> Si el índice de confianza por ruido ambiental es inferior al 80%, el sistema suprime el análisis conductual para resguardar la integridad del perfil.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">B. Medidas de Seguridad Administrativas</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Políticas de Acceso Restringido (Need-to-Know):</strong> Acceso a bases de datos crudas limitado al personal técnico esencial bajo contratos punitivos de confidencialidad.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Convenios de Simbiosis Institucional:</strong> Entidades sedes firman corresponsabilidad que prohíbe extraer o comercializar data de participantes.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Neutralidad de Notaría Digital:</strong> El sistema registra interacciones con objetividad de mercado, sin juicios morales ni inferencias subjetivas ajenas a la ingesta.</li>
+                </ul>
+
+                <p class="font-bold mt-4 mb-2" style="color: #16262e;">C. Medidas de Seguridad Físicas</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Control de Acceso:</strong> Supervisión del aforo y posicionamiento de dispositivos para evitar contaminación acústica y accesos no autorizados.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Resguardo de Activos:</strong> Estaciones de control para entrega y recolección síncrona de terminales, impidiendo fugas locales.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">5.2. Limitación del Periodo de Conservación de los Datos</h3>
+                <p style="color: #475569;">Montecristo AInsights no conservará la información de forma indefinida si pierde su propósito transaccional:</p>
+                <ul>
+                    <li style="color: #475569;">Archivos de audio crudos son eliminados automáticamente de servidores locales en un plazo máximo de 48 horas tras concluir la supervisión humana.</li>
+                    <li style="color: #475569;">Data de registro, documentos y reportes se conservarán mientras la membresía o seguimiento atemporal esté activo, o durante los plazos legales aplicables fiscales/regulatorios. Cumplido el plazo, se procede al bloqueo y supresión permanente.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">5.3. Procedimiento y Notificación de Modificaciones</h3>
+                <p style="color: #475569;">La Consultora se reserva el derecho de efectuar modificaciones al presente Aviso de Privacidad. Cualquier cambio estructural será notificado a través de:</p>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Publicación Web Oficial:</strong> Actualización en <a href="https://www.montecristoainsights.com" class="text-[#e59903] hover:underline font-semibold">www.montecristoainsights.com</a>.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Notificación Directa Automatizada:</strong> Envío de correo a direcciones registradas o alertas en mensajería instantánea antes de sesiones futuras.</li>
+                </ul>
+
+                <!-- Apartado 6 -->
+                <h2 id="apartado-6" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 6</span> ACEPTACIÓN Y CONSENTIMIENTO FORMAL DEL TITULAR</h2>
+                <p style="color: #475569;">El presente apartado constituye la manifestación expresa y formal de la voluntad del titular respecto al tratamiento de sus datos personales, información corporativa, activos documentales y flujos acústicos.</p>
+
+                <h3 style="color: #1b2f38;">6.1. Mecanismos de Manifestación del Consentimiento</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">A. Consentimiento Expreso por Medios Electrónicos:</strong> Al interactuar con sistemas de mensajería (WhatsApp), responder cuestionarios o enviar notas de voz, el titular realiza una acción afirmativa inequívoca que equivale a una firma electrónica simple.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">B. Consentimiento Tácito por Presencia y Cooperación:</strong> Al ingresar al recinto, ocupar mesas monitorizadas y verbalizar aportaciones tras recibir el instructivo de alta, el titular confirma su consentimiento para el procesamiento acústico local.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">C. Consentimiento Expreso para Datos de Contacto Directo:</strong> El intercambio privado de Nivel 2 queda sujeto al consentimiento manual y síncrono al presionar el botón [ACEPTAR] en el sistema (Handshake digital).</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">6.2. Declaración de Entendimiento del Titular</h3>
+                <p style="color: #475569;">Al otorgar su consentimiento, el titular manifiesta bajo protesta de decir verdad que:</p>
+                <ul>
+                    <li style="color: #475569;">Ha leído de manera íntegra, minuciosa y exhaustiva los apartados de este Aviso.</li>
+                    <li style="color: #475569;">Comprende los alcances de la Diarización de Voz y el uso de Inteligencia Artificial.</li>
+                    <li style="color: #475569;">Reconoce que los reportes producidos son resultado de un análisis neutral basado en los datos fácticos provistos en sala.</li>
+                    <li style="color: #475569;">Acepta que el esquema de Riesgo Operativo Transferido es proporcional para salvaguardar su confidencialidad.</li>
+                </ul>
+                <p style="color: #475569;"><strong style="color: #16262e;">Firmas de Sistema:</strong> Los logs, timestamps y hashes de confirmación generados serán almacenados como constancia legal de la manifestación de voluntad.</p>
+
+                <!-- Apartado 7 -->
+                <h2 id="apartado-7" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 7</span> EXCLUSIÓN DE RESPONSABILIDAD TECNOLÓGICA (DISCLAIMER)</h2>
+                <p style="color: #475569;">Montecristo AInsights opera como un facilitador metodológico y tecnológico. El titular acepta las siguientes exclusiones de responsabilidad técnica y comercial:</p>
+
+                <h3 style="color: #1b2f38;">7.1. Naturaleza Predictiva y Probabilística de las Sinergias</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Ausencia de Garantía Comercial:</strong> Los reportes representan estimaciones probabilísticas. La Consultora no garantiza el cierre de transacciones, contratos o éxito comercial derivado de los enlaces generados.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Notaría Digital vs. Asesoría Legal:</strong> Ningún análisis emitido debe interpretarse como asesoría legal, fiscal, financiera o de auditoría vinculante.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">7.2. Exactitud del Perfilado Conductual (Módulo El Espejo)</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Carácter Estrictamente Metodológico:</strong> El análisis psicométrico y asignación de arquetipos se generan automáticamente mediante cruce de metadatos léxicos.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Exclusión de Impacto Diagnóstico:</strong> El reporte es un activo reflexivo y no posee validez clínica o pericial. La Consultora se deslinda de interpretaciones subjetivas que afecten decisiones internas del titular.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">7.3. Continuidad del Entorno Digital e Infraestructura Híbrida</h3>
+                <p style="color: #475569;">La Consultora no se hace responsable por interrupciones, retrasos o degradación en la diarización causados por fallas de conectividad externas, anchos de banda deficientes en las Sedes o condiciones de ruido ambiental extremo que superen los umbrales. En tales casos, se activará la red de seguridad (Safety Net).</p>
+
+                <!-- Apartado 8 -->
+                <h2 id="apartado-8" style="color: #16262e; border-bottom-color: rgba(229, 153, 3, 0.3);"><span class="text-[#e59903] text-sm tracking-widest block uppercase font-montserrat mb-2">Apartado 8</span> PROPIEDAD INTELECTUAL Y CO-USO DE MARCAS</h2>
+                <p style="color: #475569;">Este apartado regula los derechos de propiedad industrial, secretos comerciales y patrimonio informativo derivado del procesamiento algorítmico.</p>
+
+                <h3 style="color: #1b2f38;">8.1. Titularidad de la Data Estructurada y Reportes</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Propiedad de la Inteligencia de Negocios:</strong> Toda la información transcrita, indexación, matrices y clústeres producidos por la infraestructura tecnológica constituyen Propiedad Intelectual exclusiva de La Consultora.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Licencia de Uso Limitada:</strong> Se otorga al usuario una licencia personal, no exclusiva y no transferible sobre sus reportes individuales. Prohibido comercializar, revender o utilizar los formatos para fines ajenos al desarrollo de su propia organización.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8.2. Blindaje del Modelo Metodológico (Secretos Industriales)</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Protección del Canon Operativo:</strong> El diseño de talleres, taxonomía, algoritmos y dinámicas están protegidos como Secretos Industriales.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Restricción de Ingeniería Inversa:</strong> Ningún participante o Sede podrá realizar ingeniería inversa, copia o descompilación de la infraestructura técnica de los monitores.</li>
+                </ul>
+
+                <h3 style="color: #1b2f38;">8.3. Consentimiento para el Co-Uso de Marcas</h3>
+                <ul>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Autorización de Presencia Institucional:</strong> El titular otorga autorización gratuita para utilizar sus logotipos y nombres comerciales en materiales de comunicación y tableros del sistema durante el servicio.</li>
+                    <li style="color: #475569;"><strong style="color: #16262e;">Documentación de Casos de Éxito:</strong> La Consultora podrá hacer referencia a la participación y resultados de optimización de forma anonimizada en reportes de mercado, garantizando la sanitización de datos confidenciales.</li>
+                </ul>
+
+                <!-- Casilla de Aceptación Previa (Móvil) - Movida al final del documento -->
+                <div class="block lg:hidden bg-[#f8fafc] border-2 border-slate-300 rounded-lg p-6 mt-12 mb-4 shadow-md">
+                    <label class="flex items-start gap-4 cursor-pointer group">
+                        <div class="relative flex-shrink-0 mt-1">
+                            <input type="checkbox" id="consent-checkbox-mobile" class="peer sr-only">
+                            <div class="w-7 h-7 border-2 border-slate-400 rounded bg-white peer-checked:bg-[#e59903] peer-checked:border-[#e59903] transition-colors flex items-center justify-center group-hover:border-[#e59903]">
+                                <i class="fas fa-check text-white text-base opacity-0 peer-checked:opacity-100 transition-opacity"></i>
+                            </div>
+                        </div>
+                        <span class="text-[15px] text-[#16262e] font-bold leading-snug">
+                            He realizado el recorrido del documento y declaro expresamente que entiendo y acepto este Aviso de Privacidad.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="mt-16 pt-8 border-t border-slate-200 text-center">
+                    <p class="text-[#e59903] font-bold tracking-[0.2em] uppercase text-[10px] mb-2 font-montserrat">Sistema de Gobernanza de Datos de Montecristo AInsights</p>
+                    <p class="text-slate-500 text-xs">Fecha de última actualización formal: 20 de Julio de 2026.</p>
+                </div>
+            </main>
+        </div>
+    </section>
+
+    <!-- Pie de Página (Footer) - Replicado de index -->
+    <footer id="contacto" class="bg-[#121f26] text-slate-400 pt-20 pb-10 border-t border-[#005f73]/20 relative z-10">
+         <div class="container mx-auto px-6 lg:px-12 grid md:grid-cols-12 gap-12 mb-16">
+            <div class="md:col-span-4 flex flex-col justify-between">
+                 <div>
+                     <img src="https://lh3.googleusercontent.com/d/1GWNeVUH4c_FP2_ZTadQceWgPJCZ25D1w" alt="Montecristo Logo" class="h-12 lg:h-14 w-auto mb-8 object-contain">
+                 </div>
+            </div>
+
+            <div class="md:col-span-2">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Explorar</h5>
+                <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                    <li><a href="/#ecosistema" class="hover:text-white transition-colors flex items-center gap-2">M.I.N.D.</a></li>
+                    <li><a href="/#evos" class="hover:text-white transition-colors flex items-center gap-2">EVOS</a></li>
+                    <li><a href="/#aura" class="hover:text-white transition-colors flex items-center gap-2">AURA</a></li>
+                    <li><a href="/#nwid" class="hover:text-white transition-colors flex items-center gap-2">NWiD</a></li>
+                </ul>
+            </div>
+            
+            <div class="md:col-span-2">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Legal</h5>
+                <ul class="space-y-4 text-xs font-medium tracking-wide font-montserrat">
+                    <li><a href="#" class="hover:text-white transition-colors">Aviso de Privacidad</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Términos de Uso</a></li>
+                </ul>
+            </div>
+
+            <div class="md:col-span-4 text-left md:text-right flex flex-col items-start md:items-end">
+                <h5 class="text-white font-bold uppercase text-[10px] tracking-[0.2em] mb-6 text-[#e59903] font-montserrat">Contacto Directo</h5>
+                <a href="mailto:team@montecristoainsights.com" class="text-lg lg:text-2xl font-serif text-white block mb-4 hover:text-[#e59903] transition-colors">team@montecristoainsights.com</a>
+                
+                <a href="https://wa.me/523318190928" target="_blank" class="text-sm font-medium text-slate-300 hover:text-[#e59903] font-montserrat flex items-center gap-2 transition-colors">
+                    <i class="fab fa-whatsapp text-xl text-[#25D366]"></i> +52 33 1819 0928
+                </a>
+                
+                <div class="flex justify-start md:justify-end gap-3 mt-8 flex-wrap">
+                    <a href="https://www.linkedin.com/company/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.tiktok.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                    <a href="https://www.youtube.com/@montecristoainsights" target="_blank" class="w-10 h-10 border border-slate-700 text-slate-400 rounded-full flex items-center justify-center hover:border-[#e59903] hover:text-[#e59903] hover:bg-[#e59903]/10 transition-all duration-300" title="YouTube"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+         </div>
+
+         <div class="container mx-auto px-6 lg:px-12 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+             <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat">© 2026 Montecristo AInsights. Todos los derechos reservados.</p>
+             <p class="text-[9px] md:text-[10px] uppercase tracking-widest opacity-40 font-medium font-montserrat">Arquitectura de Negocios</p>
+         </div>
+    </footer>
+
+    <!-- Scripts de Interacción -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Sincronización de las casillas de verificación (Desktop / Mobile)
+            const checkboxDesktop = document.getElementById('consent-checkbox-desktop');
+            const checkboxMobile = document.getElementById('consent-checkbox-mobile');
+
+            if(checkboxDesktop && checkboxMobile) {
+                checkboxDesktop.addEventListener('change', (e) => {
+                    checkboxMobile.checked = e.target.checked;
+                });
+                checkboxMobile.addEventListener('change', (e) => {
+                    checkboxDesktop.checked = e.target.checked;
+                });
+            }
+
+            // Lógica del Header Scroll
+            const header = document.getElementById('main-header');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    header.classList.add('nav-scrolled');
+                    header.classList.remove('py-6', 'border-b', 'border-white/10');
+                } else {
+                    header.classList.remove('nav-scrolled');
+                    header.classList.add('py-6', 'border-b', 'border-white/10');
+                }
+            });
+
+            // Lógica del Menú Móvil
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const closeMenuBtn = document.getElementById('close-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileLinks = document.querySelectorAll('.mobile-link');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('translate-x-full');
+                document.body.classList.toggle('overflow-hidden');
+            }
+
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+            closeMenuBtn.addEventListener('click', toggleMenu);
+            mobileLinks.forEach(link => link.addEventListener('click', toggleMenu));
+            
+            // Lógica para resaltar el índice lateral al hacer scroll (ScrollSpy simple)
+            const sections = document.querySelectorAll('.legal-content h2');
+            const navLinks = document.querySelectorAll('.toc-container nav a');
+
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop;
+                    const sectionHeight = section.clientHeight;
+                    if (scrollY >= (sectionTop - 200)) {
+                        current = section.getAttribute('id');
+                    }
+                });
+
+                navLinks.forEach(link => {
+                    link.classList.remove('text-[#e59903]', 'font-semibold');
+                    link.classList.add('text-slate-400');
+                    if (link.getAttribute('href').includes(current)) {
+                        link.classList.add('text-[#e59903]', 'font-semibold');
+                        link.classList.remove('text-slate-400');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
